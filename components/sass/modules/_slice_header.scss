@@ -10,15 +10,22 @@
 .siteLogoName {
   @include span(12);
 
+  @include susy-breakpoint($breakpoint-sm) {
+    @include span(2);
+  }
+
   @include susy-breakpoint($breakpoint-md) {
     @include span(3);
   }
-
 
 }
 
 .navbar {
   @include span(12);
+
+  @include susy-breakpoint($breakpoint-sm) {
+    @include span(10)
+  }
 
   @include susy-breakpoint($breakpoint-md) {
     @include span(9)
@@ -31,6 +38,8 @@
 
 
 .slice_header {
+  position: relative;
+  z-index: 10;
 
   .siteLogoName {
     text-align: center;
@@ -45,6 +54,15 @@
 
   .siteLogo img {
     max-width: $site_logo-max-width;
+    width: 100px;
+
+    @include susy-breakpoint($breakpoint-sm) {
+      width:120px;
+    }
+
+    @include susy-breakpoint($breakpoint-md) {
+      width: auto;
+    }
   }
 
   .siteLogoName .siteName a {
@@ -101,7 +119,7 @@
       margin-top: $nav_link_top-margin-top;
 
       > a {
-        padding: 9px 20px;
+        padding: 36px 10px 35px;
       }
 
 
@@ -148,6 +166,7 @@
 
       li:hover > a {
         color: $nav_dropdown_link-color--hover;
+        background-color: $nav_dropdown_link-background-color--hover;
       }
 
 
@@ -285,7 +304,7 @@
   .slicknav_nav {
     color: $slicknav-color;
     margin: 0;
-    padding: 8px 12px;
+    padding: 1px 0;
     font-size: $slicknav-font-size;
     list-style: none;
     overflow: hidden;
@@ -306,6 +325,10 @@
         -webkit-border-radius:0;
         -moz-border-radius:0;
         border-radius:0;
+        
+        > a {
+          color: #fff;
+        }
       }
     }
 
@@ -314,7 +337,7 @@
       margin: 2px 0px;
       text-decoration: none;
       font-size: 1.6rem;
-      color: $slicknav-color;
+      color: $slicknav-color--open;
       &:hover {
         background: $slicknav-background-color--hover;
         color: $slicknav-color--hover;
@@ -366,7 +389,7 @@
     color: $slicknav-color;
     font-weight: 500;
     font-size: 16px;
-    line-height: 12px;
+    line-height: 6px;
     text-align: center;
     text-indent: 0px;
     width: 12px;
@@ -411,7 +434,7 @@
   @media only screen and (min-width: $breakpoint-sm) {
 
     .siteLogoName {
-      margin-top: $site_logo-margin-top + 15px;
+      margin-top: $site_logo-margin-top;
     }
 
     nav a {
@@ -423,7 +446,11 @@
       margin: 0 auto;
 
       & > li > a {
-        padding: 9px 10px;
+        padding: 20px 10px;
+
+        @include susy-breakpoint($breakpoint-md) {
+          padding: 36px 10px 35px;
+        }
       }
     }
   }
@@ -432,7 +459,7 @@
 
 
     .navbar {
-      margin-top: 32px;
+      margin-top: 0;
 
       a {
         font-size: $nav_link-font-size + 0.2rem;
@@ -440,7 +467,7 @@
     }
 
     .root_menu > li ul a {
-      font-size: $nav_dropdown_link-font-size;
+      font-size: $nav_dropdown_link-font-size + 0.2rem;
     }
 
   }

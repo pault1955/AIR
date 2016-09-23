@@ -43,12 +43,13 @@ $(document).ready(function () {
     },
     'init': function(){
       if ($('body').hasClass('guest_user')) {
-        $('<li class="sign_in_nav"><div class="statusbar"><a href="/user/login.aspx" title="Login to access more features">Login</a><a href="/User/Registration.aspx" title="Apply for web site username and password" class="register_link">Register</a></div></li>').insertAfter('.slicknav_nav > .last_item').fadeIn("slow");
+        $('<li class="sign_in_nav"><div class="statusbar"><a href="/user/login.aspx" title="Login to access more features">Login</a><a href="/User/Registration.aspx" title="Apply for web site username and password" class="register_link">Register</a></div></li>').insertAfter('.slicknav_nav > li.slicknav_parent:last-child').fadeIn("slow");
       }else{
-        $('<li class="log_out_nav"><div class="statusbar"><a href="/User/Logout.aspx" title="Sign out of the web site" class="logout_link">Logout</a><a href="/Admin/Default.aspx" title="Access site administration pages" class="weboffice_link">Web Office</a></div></li>').insertAfter('.slicknav_nav > .last_item').fadeIn("slow");
+        $('<li class="log_out_nav"><div class="statusbar"><a href="/User/Logout.aspx" title="Sign out of the web site" class="logout_link">Logout</a><a href="/Admin/Default.aspx" title="Access site administration pages" class="weboffice_link">Web Office</a></div></li>').insertAfter('.slicknav_nav > li.slicknav_parent:last-child').fadeIn("slow");
       }
     }
   });
+
 
   $('.slice_slideshow_full_width  .bannerSlides .gallery_ul').show().bxSlider({
     mode: 'fade',
@@ -60,7 +61,7 @@ $(document).ready(function () {
     preloadImages: 'all'
   });
 
-
+/*
   $( '.slice_slideshow_full_width  .bannerSlides ul li.gallery_li a img' ).each(function( ) {
     var slideLink = $(this).parent().attr('href');
     var alt = $(this).attr('alt');
@@ -70,6 +71,6 @@ $(document).ready(function () {
     var caption = '<div class="caption">' + title + '<div class="divider"></div>' + subtitle + '<a href="' + slideLink + '" class="slideButton">MORE DETAILS</a></div>';
     $(caption).insertAfter( this );
   });
-
+*/
 
 });

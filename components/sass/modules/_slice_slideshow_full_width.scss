@@ -5,8 +5,15 @@
 .slice_slideshow_full_width {
 
   .bannerSlides {
-    margin-top: 0;
+    margin-top: -19px;
 
+    @include  susy-breakpoint($breakpoint-sm) {
+      margin-top: -75px;
+    }
+
+    @include  susy-breakpoint($breakpoint-md) {
+      margin-top: -99px;
+    }
     .bx-wrapper {
       margin-bottom: 0;
     }

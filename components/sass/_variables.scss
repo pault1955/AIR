@@ -26,7 +26,7 @@ $breakpoint-lg: 1200px;
 
 
 //Add Color Palette
-$blue       : #063642;
+$blue       : #005296;
 $blue-light : #5c9cc9;
 $blue-link  : #0db0d9;
 $grey-border : #555555;
@@ -46,16 +46,17 @@ $heavy    : 800;
 
 // site defaults
 $default_font-family : Lato, Arial, sans-serif;
-$default_font-color  : $grey-dark;
+$default_font-color  : #3f4663;
 $default_font-size   : 0.625rem;
 $default_line-height : $default_font-size + 0.2rem;
 
-$default_link_color: $blue-link;
-$default_link-color--hover : lighten($blue, 30);
+$default_link_color: #0097d8;
+$default_link-color--hover : #005296;
 
 $default_background-color: $white;
 
-$default_button-background-color: $blue-light;
+$default_button-background-color: #31aeb6;
+$default_button-background-color--hover: #ea5b51;
 $default_button-color: $white;
 
 // ======================================
@@ -63,7 +64,7 @@ $default_button-color: $white;
 // ======================================
 
 $site_logo_name-height: auto;
-$site_logo-margin-top: 15px;
+$site_logo-margin-top: 0;
 $site_logo-margin-bottom: 10px;
 $site_logo-font-size: 2.6rem;
 $site_logo-max-width: 80%;
@@ -77,22 +78,22 @@ $site_name-margin-bottom: 75px;
 
 $nav_background-color: transparent;
 $nav_link-color: $grey-mid;
-$nav_link-color--hover: lighten($blue-light,40);
+$nav_link-color--hover: #005296;
 $nav_link-font-size: 1.6rem;
 $nav_link-font-weight: $normal;
-$nav_link-background-color: $blue-light;
-$nav_link-background-color--hover: darken($blue-light, 10);
-$nav_link_top-margin-top: 4px;
+$nav_link-background-color: #f2f2f5;
+$nav_link-background-color--hover: #f2f2f5;
+$nav_link_top-margin-top: 0;
 $nav_link_home-margin-top: 0;
 
-$nav_dropdown_link-font-size: 1.6rem;
-$nav_dropdown_link-background-color: $blue-light;
-$nav_dropdown_link-color: $white;
-$nav_dropdown_link-color--hover: darken($blue-light,40);
-$nav_dropdown_link-background-color--hover: darken($blue-light,50);
-$nav_dropdown-background-color: $blue-light;
-$nav_dropdown-color: $default_link_color;
-$nav_dropdown-background-color--hover: $grey-light;
+$nav_dropdown_link-font-size: 1.5rem;
+$nav_dropdown_link-background-color: #f2f2f5;
+$nav_dropdown_link-color: #005296;
+$nav_dropdown_link-color--hover: #fff;
+$nav_dropdown_link-background-color--hover: #005296;
+$nav_dropdown-background-color: #f2f2f5;
+$nav_dropdown-color: #005296;
+$nav_dropdown-background-color--hover: #005296;
 $nav_dropdown-color--hover: $default_link_color--hover;
 
 // ======================================
@@ -105,19 +106,19 @@ $slicknav_button-background-color: transparent ;
 $slicknav_button-background-color--open: transparent;
 $slicknav-color: $white;
 $slicknav-text-shadow: $white;
-$slicknav-header-background-color: $blue;
-$slicknav-top-level-background-color: $blue;
-$slicknav-background-color: $blue-light;
-$slicknav-background-color--hover: transparent;
-$slicknav-color--hover: darken($blue-light,15);
-$slicknav-color--open: $slicknav-color;
-$slicknav-background--open: transparent;
-$slicknav-background--open--hover: $blue-light;
+$slicknav-header-background-color: #005296;
+$slicknav-top-level-background-color: #f2f2f5;
+$slicknav-background-color: #005296;
+$slicknav-background-color--hover: #005296;
+$slicknav-color--hover: #fff;
+$slicknav-color--open: #005296;
+$slicknav-background--open: #f2f2f5;
+$slicknav-background--open--hover: #005296;
 $slicknav-toplink-background-color--open: lighten($blue-light,10);
 $slicknav-toplink-color--open: $slicknav-color;
 $slicknav-font-size: $default_font-size;
 $slicknav-submenu-font-size: $default_font-size -3px;
-$slicknav_sub_menu-background-color: lighten($blue-light,5);
+$slicknav_sub_menu-background-color: #f2f2f5;
 $slicknav-link-border-color: $blue;
 $slicknav-background-parent--collapsed: lighten($blue-light,20);
 $slicknav-background-parent--open: $blue-light;

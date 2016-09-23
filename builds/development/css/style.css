@@ -300,7 +300,7 @@ html {
 
 /* line 11, ../../../components/sass/_base.scss */
 body {
-  color: #4D4D4D;
+  color: #3f4663;
   font-family: Lato, Arial, sans-serif;
   font-size: 0.625rem;
   line-height: 0.825rem;
@@ -374,7 +374,7 @@ blockquote {
 
 /* line 79, ../../../components/sass/_base.scss */
 a {
-  color: #0db0d9;
+  color: #0097d8;
   -webkit-transition: all 500ms ease;
   -moz-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
@@ -383,7 +383,7 @@ a {
 }
 /* line 87, ../../../components/sass/_base.scss */
 a:hover {
-  color: #13a9ce;
+  color: #005296;
   text-decoration: none;
 }
 
@@ -559,6 +559,15 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   margin-left: 1.20773%;
   margin-right: 1.20773%;
 }
+@media (min-width: 768px) {
+  /* line 10, ../../../components/sass/modules/_slice_header.scss */
+  .siteLogoName {
+    width: 14.25121%;
+    float: left;
+    margin-left: 1.20773%;
+    margin-right: 1.20773%;
+  }
+}
 @media (min-width: 992px) {
   /* line 10, ../../../components/sass/modules/_slice_header.scss */
   .siteLogoName {
@@ -569,15 +578,24 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   }
 }
 
-/* line 20, ../../../components/sass/modules/_slice_header.scss */
+/* line 23, ../../../components/sass/modules/_slice_header.scss */
 .navbar {
   width: 97.58454%;
   float: left;
   margin-left: 1.20773%;
   margin-right: 1.20773%;
 }
+@media (min-width: 768px) {
+  /* line 23, ../../../components/sass/modules/_slice_header.scss */
+  .navbar {
+    width: 80.91787%;
+    float: left;
+    margin-left: 1.20773%;
+    margin-right: 1.20773%;
+  }
+}
 @media (min-width: 992px) {
-  /* line 20, ../../../components/sass/modules/_slice_header.scss */
+  /* line 23, ../../../components/sass/modules/_slice_header.scss */
   .navbar {
     width: 72.58454%;
     float: left;
@@ -586,44 +604,59 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   }
 }
 
-/* line 33, ../../../components/sass/modules/_slice_header.scss */
+/* line 40, ../../../components/sass/modules/_slice_header.scss */
 .slice_header {
+  position: relative;
+  z-index: 10;
   /* ==========================================================================
      Slicknav
      ========================================================================== */
 }
-/* line 35, ../../../components/sass/modules/_slice_header.scss */
+/* line 44, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .siteLogoName {
   text-align: center;
   height: auto;
-  margin-top: 15px;
+  margin-top: 0;
   margin-bottom: 10px;
 }
-/* line 42, ../../../components/sass/modules/_slice_header.scss */
+/* line 51, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .siteLogoName a {
   text-decoration: none;
 }
-/* line 46, ../../../components/sass/modules/_slice_header.scss */
+/* line 55, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .siteLogo img {
   max-width: 80%;
+  width: 100px;
 }
-/* line 50, ../../../components/sass/modules/_slice_header.scss */
+@media (min-width: 768px) {
+  /* line 55, ../../../components/sass/modules/_slice_header.scss */
+  .slice_header .siteLogo img {
+    width: 120px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 55, ../../../components/sass/modules/_slice_header.scss */
+  .slice_header .siteLogo img {
+    width: auto;
+  }
+}
+/* line 68, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .siteLogoName .siteName a {
   font-size: 2.6rem;
-  color: #063642;
+  color: #005296;
   margin-bottom: 75px;
   vertical-align: middle;
 }
-/* line 57, ../../../components/sass/modules/_slice_header.scss */
+/* line 75, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .navbar {
   display: none;
 }
-/* line 61, ../../../components/sass/modules/_slice_header.scss */
+/* line 79, ../../../components/sass/modules/_slice_header.scss */
 .slice_header nav {
   background-color: transparent;
   height: 44px;
 }
-/* line 66, ../../../components/sass/modules/_slice_header.scss */
+/* line 84, ../../../components/sass/modules/_slice_header.scss */
 .slice_header nav a {
   color: #424242;
   font-size: 1.6rem;
@@ -637,55 +670,55 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   text-decoration: none;
   text-transform: capitalize;
 }
-/* line 80, ../../../components/sass/modules/_slice_header.scss */
+/* line 98, ../../../components/sass/modules/_slice_header.scss */
 .slice_header nav ul {
   list-style-type: none;
 }
-/* line 86, ../../../components/sass/modules/_slice_header.scss */
+/* line 104, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .root_menu ul {
   display: none;
 }
-/* line 90, ../../../components/sass/modules/_slice_header.scss */
+/* line 108, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .root_menu li {
   position: relative;
 }
-/* line 93, ../../../components/sass/modules/_slice_header.scss */
+/* line 111, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .root_menu li:hover > ul {
   display: block;
 }
-/* line 98, ../../../components/sass/modules/_slice_header.scss */
+/* line 116, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .root_menu > li {
   float: left;
   position: relative;
-  margin-top: 4px;
+  margin-top: 0;
 }
-/* line 103, ../../../components/sass/modules/_slice_header.scss */
+/* line 121, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .root_menu > li > a {
-  padding: 9px 20px;
+  padding: 36px 10px 35px;
 }
-/* line 108, ../../../components/sass/modules/_slice_header.scss */
+/* line 126, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .root_menu > li ul {
   position: absolute;
   top: 100%;
   left: 0;
-  background: #5c9cc9;
+  background: #f2f2f5;
   min-width: 210px;
   padding: 7px 0;
   z-index: 999;
 }
-/* line 117, ../../../components/sass/modules/_slice_header.scss */
+/* line 135, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .root_menu > li ul a {
-  color: #FFFFFF;
-  font-size: 1.6rem;
+  color: #005296;
+  font-size: 1.5rem;
   font-weight: 400;
   padding: 3px 23px;
 }
-/* line 124, ../../../components/sass/modules/_slice_header.scss */
+/* line 142, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .root_menu > li ul ul {
   top: -7px;
   left: 100%;
 }
-/* line 129, ../../../components/sass/modules/_slice_header.scss */
+/* line 147, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .root_menu > li ul li.has_sub_menu:before {
   content: ">";
   color: #fff;
@@ -695,20 +728,21 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   line-height: 30px;
   height: 30px;
 }
-/* line 144, ../../../components/sass/modules/_slice_header.scss */
+/* line 162, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .root_menu > li:hover > a {
-  background-color: #3c84b6;
-  color: #f5f9fc;
+  background-color: #f2f2f5;
+  color: #005296;
 }
-/* line 149, ../../../components/sass/modules/_slice_header.scss */
+/* line 167, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .root_menu > li li:hover > a {
-  color: #163043;
+  color: #fff;
+  background-color: #005296;
 }
-/* line 160, ../../../components/sass/modules/_slice_header.scss */
+/* line 179, ../../../components/sass/modules/_slice_header.scss */
 .slice_header #mobile_menu {
   display: none;
 }
-/* line 171, ../../../components/sass/modules/_slice_header.scss */
+/* line 190, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_btn {
   position: relative;
   display: block;
@@ -718,30 +752,30 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   line-height: 1.125em;
   cursor: pointer;
 }
-/* line 179, ../../../components/sass/modules/_slice_header.scss */
+/* line 198, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_btn .slicknav_icon-bar + .slicknav_icon-bar {
   margin-top: 0.188em;
 }
-/* line 183, ../../../components/sass/modules/_slice_header.scss */
+/* line 202, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_menu {
   *zoom: 1;
 }
-/* line 185, ../../../components/sass/modules/_slice_header.scss */
+/* line 204, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_menu .slicknav_menutxt {
   display: block;
   line-height: 1.125rem;
   float: left;
 }
-/* line 190, ../../../components/sass/modules/_slice_header.scss */
+/* line 209, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_menu .slicknav_icon {
   float: left;
   margin: 0.188em 0 0 0.438em;
 }
-/* line 194, ../../../components/sass/modules/_slice_header.scss */
+/* line 213, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_menu .slicknav_no-text {
   margin: 0;
 }
-/* line 197, ../../../components/sass/modules/_slice_header.scss */
+/* line 216, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_menu .slicknav_icon-bar {
   display: block;
   width: 1.125em;
@@ -753,83 +787,83 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
 }
-/* line 208, ../../../components/sass/modules/_slice_header.scss */
+/* line 227, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_menu:before {
   content: " ";
   display: table;
 }
-/* line 212, ../../../components/sass/modules/_slice_header.scss */
+/* line 231, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_menu:after {
   content: " ";
   display: table;
   clear: both;
 }
-/* line 218, ../../../components/sass/modules/_slice_header.scss */
+/* line 237, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_nav {
   clear: both;
 }
-/* line 220, ../../../components/sass/modules/_slice_header.scss */
+/* line 239, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_nav ul {
   display: block;
 }
-/* line 223, ../../../components/sass/modules/_slice_header.scss */
+/* line 242, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_nav li {
   display: block;
 }
-/* line 226, ../../../components/sass/modules/_slice_header.scss */
+/* line 245, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_nav .slicknav_arrow {
   font-size: 0.8em;
   margin: 0 0 0 0.4em;
   float: right;
   font-family: arial;
 }
-/* line 232, ../../../components/sass/modules/_slice_header.scss */
+/* line 251, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_nav .slicknav_item {
   cursor: pointer;
 }
-/* line 234, ../../../components/sass/modules/_slice_header.scss */
+/* line 253, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_nav .slicknav_item a {
   display: inline;
 }
-/* line 238, ../../../components/sass/modules/_slice_header.scss */
+/* line 257, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_nav .slicknav_row {
   display: block;
 }
-/* line 241, ../../../components/sass/modules/_slice_header.scss */
+/* line 260, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_nav a {
   display: block;
 }
-/* line 244, ../../../components/sass/modules/_slice_header.scss */
+/* line 263, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_nav .slicknav_parent-link a {
   display: inline;
 }
-/* line 248, ../../../components/sass/modules/_slice_header.scss */
+/* line 267, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_brand {
   float: left;
 }
-/* line 254, ../../../components/sass/modules/_slice_header.scss */
+/* line 273, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_menu {
   font-size: 16px;
   box-sizing: border-box;
-  background: #5c9cc9;
+  background: #005296;
   padding: 5px 0;
 }
-/* line 259, ../../../components/sass/modules/_slice_header.scss */
+/* line 278, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_menu * {
   box-sizing: border-box;
 }
-/* line 262, ../../../components/sass/modules/_slice_header.scss */
+/* line 281, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_menu .slicknav_menutxt {
   color: #FFFFFF;
   font-weight: normal;
   text-shadow: none;
-  background: #5c9cc9;
+  background: #005296;
 }
-/* line 268, ../../../components/sass/modules/_slice_header.scss */
+/* line 287, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_menu .slicknav_icon-bar {
   background-color: #FFFFFF;
 }
-/* line 272, ../../../components/sass/modules/_slice_header.scss */
+/* line 291, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_btn {
   margin: 0;
   text-decoration: none;
@@ -839,71 +873,75 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   border-radius: 4px;
   background-color: transparent;
 }
-/* line 281, ../../../components/sass/modules/_slice_header.scss */
+/* line 300, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_btn.slicknav_open {
   background-color: transparent;
 }
-/* line 285, ../../../components/sass/modules/_slice_header.scss */
+/* line 304, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_nav {
   color: #FFFFFF;
   margin: 0;
-  padding: 8px 12px;
+  padding: 1px 0;
   font-size: 0.625rem;
   list-style: none;
   overflow: hidden;
-  background-color: transparent;
+  background-color: #f2f2f5;
 }
-/* line 293, ../../../components/sass/modules/_slice_header.scss */
+/* line 312, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_nav ul {
   list-style: none;
   overflow: hidden;
   padding: 0;
   margin: 0;
 }
-/* line 299, ../../../components/sass/modules/_slice_header.scss */
+/* line 318, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_nav .slicknav_row {
   padding: 10px;
   margin: 0;
 }
-/* line 303, ../../../components/sass/modules/_slice_header.scss */
+/* line 322, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_nav .slicknav_row:hover {
-  background: #5c9cc9;
+  background: #005296;
   color: #FFFFFF;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
 }
-/* line 312, ../../../components/sass/modules/_slice_header.scss */
+/* line 329, ../../../components/sass/modules/_slice_header.scss */
+.slice_header .slicknav_nav .slicknav_row:hover > a {
+  color: #fff;
+}
+/* line 335, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_nav a {
   padding: 10px;
   margin: 2px 0px;
   text-decoration: none;
   font-size: 1.6rem;
-  color: #FFFFFF;
+  color: #005296;
 }
-/* line 318, ../../../components/sass/modules/_slice_header.scss */
+/* line 341, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_nav a:hover {
-  background: transparent;
-  color: #3676a3;
+  background: #005296;
+  color: #fff;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
 }
-/* line 326, ../../../components/sass/modules/_slice_header.scss */
+/* line 349, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_nav .slicknav_txtnode {
   margin-left: 15px;
 }
-/* line 329, ../../../components/sass/modules/_slice_header.scss */
+/* line 352, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_nav .slicknav_item a {
   padding: 0;
   margin: 0;
 }
-/* line 333, ../../../components/sass/modules/_slice_header.scss */
+/* line 356, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_nav .slicknav_parent-link a {
   padding: 0;
   margin: 0;
 }
-/* line 338, ../../../components/sass/modules/_slice_header.scss */
+/* line 361, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_brand {
   color: #FFFFFF;
   font-size: 18px;
@@ -911,31 +949,31 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   padding: 7px 12px;
   height: 44px;
 }
-/* line 346, ../../../components/sass/modules/_slice_header.scss */
+/* line 369, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_open > a {
-  background: transparent;
-  color: #FFFFFF;
+  background: #f2f2f5;
+  color: #005296;
 }
-/* line 351, ../../../components/sass/modules/_slice_header.scss */
+/* line 374, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_open > a a, .slice_header .slicknav_open > a > a {
-  color: #FFFFFF !important;
+  color: #005296 !important;
 }
-/* line 355, ../../../components/sass/modules/_slice_header.scss */
+/* line 378, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_open > ul {
-  background: #6fa8cf;
+  background: #f2f2f5;
   padding-left: 12px;
 }
-/* line 359, ../../../components/sass/modules/_slice_header.scss */
+/* line 382, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_open > ul li a {
   padding-left: 12px;
 }
-/* line 364, ../../../components/sass/modules/_slice_header.scss */
+/* line 387, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_btn.slicknav_open .slicknav_icon:before {
   content: 'X';
   color: #FFFFFF;
   font-weight: 500;
   font-size: 16px;
-  line-height: 12px;
+  line-height: 6px;
   text-align: center;
   text-indent: 0px;
   width: 12px;
@@ -943,90 +981,109 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   display: block;
   margin: 0 3px;
 }
-/* line 379, ../../../components/sass/modules/_slice_header.scss */
+/* line 402, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_btn.slicknav_open .slicknav_icon .slicknav_icon-bar {
   display: none;
 }
-/* line 387, ../../../components/sass/modules/_slice_header.scss */
+/* line 410, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_nav ul .slicknav_parent.slicknav_open > .slciknav_row {
   background-color: #5c9cc9;
 }
 @media only screen and (min-width: 768px) {
-  /* line 392, ../../../components/sass/modules/_slice_header.scss */
+  /* line 415, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .navbar {
     display: block;
     margin-bottom: 20px;
     margin-top: 0;
   }
-  /* line 397, ../../../components/sass/modules/_slice_header.scss */
+  /* line 420, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .siteLogo img {
     max-width: 96%;
   }
-  /* line 400, ../../../components/sass/modules/_slice_header.scss */
+  /* line 423, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .siteLogoName .siteName a {
     font-size: 3.64rem;
   }
-  /* line 403, ../../../components/sass/modules/_slice_header.scss */
+  /* line 426, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .siteLogoName {
     text-align: center;
   }
-  /* line 406, ../../../components/sass/modules/_slice_header.scss */
+  /* line 429, ../../../components/sass/modules/_slice_header.scss */
   .slice_header #mobile_nav {
     display: none;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 413, ../../../components/sass/modules/_slice_header.scss */
+  /* line 436, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .siteLogoName {
-    margin-top: 30px;
+    margin-top: 0;
   }
-  /* line 417, ../../../components/sass/modules/_slice_header.scss */
+  /* line 440, ../../../components/sass/modules/_slice_header.scss */
   .slice_header nav a {
     font-size: 1.6rem;
   }
-  /* line 421, ../../../components/sass/modules/_slice_header.scss */
+  /* line 444, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .root_menu {
     padding-left: 0;
     margin: 0 auto;
   }
-  /* line 425, ../../../components/sass/modules/_slice_header.scss */
+  /* line 448, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .root_menu > li > a {
-    padding: 9px 10px;
+    padding: 20px 10px;
   }
 }
-@media only screen and (min-width: 992px) {
-  /* line 434, ../../../components/sass/modules/_slice_header.scss */
-  .slice_header .navbar {
-    margin-top: 32px;
+@media only screen and (min-width: 768px) and (min-width: 992px) {
+  /* line 448, ../../../components/sass/modules/_slice_header.scss */
+  .slice_header .root_menu > li > a {
+    padding: 36px 10px 35px;
   }
-  /* line 437, ../../../components/sass/modules/_slice_header.scss */
+}
+
+@media only screen and (min-width: 992px) {
+  /* line 461, ../../../components/sass/modules/_slice_header.scss */
+  .slice_header .navbar {
+    margin-top: 0;
+  }
+  /* line 464, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .navbar a {
     font-size: 1.8rem;
   }
-  /* line 442, ../../../components/sass/modules/_slice_header.scss */
+  /* line 469, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .root_menu > li ul a {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
 }
 
 /* line 7, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
 .slice_slideshow_full_width .bannerSlides {
-  margin-top: 0;
+  margin-top: -19px;
 }
-/* line 10, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
+@media (min-width: 768px) {
+  /* line 7, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
+  .slice_slideshow_full_width .bannerSlides {
+    margin-top: -75px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 7, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
+  .slice_slideshow_full_width .bannerSlides {
+    margin-top: -99px;
+  }
+}
+/* line 17, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
 .slice_slideshow_full_width .bannerSlides .bx-wrapper {
   margin-bottom: 0;
 }
-/* line 15, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
+/* line 22, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
 .slice_slideshow_full_width .bannerSlides .gallery_ul {
   display: none;
 }
-/* line 18, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
+/* line 25, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
 .slice_slideshow_full_width .bannerSlides .gallery_li img {
   height: 100%;
   width: 100%;
 }
-/* line 23, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
+/* line 30, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
 .slice_slideshow_full_width .bx-wrapper {
   border: none !important;
   box-shadow: none !important;
@@ -1039,11 +1096,11 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   -o-transform: translatez(0);
   transform: translatez(0);
 }
-/* line 36, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
+/* line 43, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
 .slice_slideshow_full_width .bannerSlides .gallery_ul {
   padding: 0;
 }
-/* line 40, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
+/* line 47, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
 .slice_slideshow_full_width .bx-controls.bx-has-pager {
   position: absolute;
   width: 200px;
@@ -1053,7 +1110,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   bottom: 50px;
   display: none;
 }
-/* line 50, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
+/* line 57, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
 .slice_slideshow_full_width .bx-wrapper .bx-pager.bx-default-pager a {
   background: #c6c6c6;
   -webkit-transition: background-color 500ms ease;
@@ -1065,12 +1122,12 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   -webkit-border-radius: 7px;
   border-radius: 7px;
 }
-/* line 62, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
+/* line 69, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
 .slice_slideshow_full_width .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .slice_slideshow_full_width .bx-wrapper .bx-pager.bx-default-pager a.active {
   background: #0067b0;
 }
-/* line 66, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
+/* line 73, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
 .slice_slideshow_full_width .caption {
   position: absolute;
   top: 30%;
@@ -1079,7 +1136,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 76, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
+/* line 83, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
 .slice_slideshow_full_width .caption .divider {
   border-top: 4px solid #d9cdc7;
   opacity: 0.6;
@@ -1088,7 +1145,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   text-align: center;
   display: none;
 }
-/* line 85, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
+/* line 92, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
 .slice_slideshow_full_width .caption .slideTitle {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -1099,7 +1156,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   font-weight: 600;
   text-align: center;
 }
-/* line 96, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
+/* line 103, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
 .slice_slideshow_full_width .caption .slideText {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -1111,7 +1168,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   text-align: center;
   display: none;
 }
-/* line 107, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
+/* line 114, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
 .slice_slideshow_full_width .caption .slideButton {
   color: #FFFFFF;
   border: 2px solid #FFFFFF;
@@ -1129,55 +1186,55 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   transition: background-color 500ms ease, border-color 500ms ease, color 500ms ease;
   text-decoration: none;
 }
-/* line 124, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
+/* line 131, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
 .slice_slideshow_full_width .caption .slideButton:hover {
   background-color: #FFFFFF;
   color: #5c9cc9;
 }
 @media (min-width: 480px) {
-  /* line 130, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
+  /* line 137, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
   .slice_slideshow_full_width .caption {
     top: 8%;
   }
-  /* line 134, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
+  /* line 141, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
   .slice_slideshow_full_width .caption .divider {
     display: block;
   }
-  /* line 138, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
+  /* line 145, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
   .slice_slideshow_full_width .caption .slideTitle {
     font-size: 4rem;
     line-height: 4.5rem;
   }
-  /* line 142, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
+  /* line 149, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
   .slice_slideshow_full_width .caption .slideText {
     display: block;
   }
 }
 @media (min-width: 768px) {
-  /* line 149, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
+  /* line 156, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
   .slice_slideshow_full_width .caption {
     top: 8%;
   }
-  /* line 153, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
+  /* line 160, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
   .slice_slideshow_full_width .caption .slideTitle {
     font-size: 5rem;
     line-height: 5.5rem;
   }
-  /* line 157, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
+  /* line 164, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
   .slice_slideshow_full_width .caption .slideButton {
     display: block;
   }
-  /* line 161, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
+  /* line 168, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
   .slice_slideshow_full_width .bx-controls.bx-has-pager {
     display: block;
   }
 }
 @media (min-width: 992px) {
-  /* line 167, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
+  /* line 174, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
   .slice_slideshow_full_width .caption {
     top: 12%;
   }
-  /* line 171, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
+  /* line 178, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
   .slice_slideshow_full_width .caption .slideTitle {
     font-size: 7rem;
     line-height: 7.5rem;
@@ -1223,7 +1280,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   }
 }
 
-/* line 37, ../../../components/sass/modules/_slice_blocks2.scss */
+/* line 38, ../../../components/sass/modules/_slice_blocks2.scss */
 .slice_blocks2 .block2-1, .slice_blocks2 .block2-2 {
   padding: 30px 30px 30px 60px;
   color: #424242;
@@ -1232,27 +1289,27 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   background-position: 25px 27px;
   background-repeat: no-repeat;
 }
-/* line 45, ../../../components/sass/modules/_slice_blocks2.scss */
+/* line 46, ../../../components/sass/modules/_slice_blocks2.scss */
 .slice_blocks2 .block2-1 span, .slice_blocks2 .block2-2 span {
   color: #0067b0;
   font-weight: 700;
 }
-/* line 51, ../../../components/sass/modules/_slice_blocks2.scss */
+/* line 52, ../../../components/sass/modules/_slice_blocks2.scss */
 .slice_blocks2 .block2-1 {
   background-image: url(../images/icon-clock.png);
   padding-bottom: 0;
 }
 @media (min-width: 467px) {
-  /* line 51, ../../../components/sass/modules/_slice_blocks2.scss */
+  /* line 52, ../../../components/sass/modules/_slice_blocks2.scss */
   .slice_blocks2 .block2-1 {
     padding-bottom: 30px;
   }
 }
-/* line 60, ../../../components/sass/modules/_slice_blocks2.scss */
+/* line 61, ../../../components/sass/modules/_slice_blocks2.scss */
 .slice_blocks2 .block2-2 {
   background-image: url(../images/icon-marker.png);
 }
-/* line 64, ../../../components/sass/modules/_slice_blocks2.scss */
+/* line 65, ../../../components/sass/modules/_slice_blocks2.scss */
 .slice_blocks2 .mapButton {
   display: inline-block;
   margin-top: 0;
@@ -1264,20 +1321,20 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
-  border: 1px solid #5c9cc9;
-  background-color: #5c9cc9;
+  border: 1px solid #31aeb6;
+  background-color: #31aeb6;
   color: #FFFFFF;
   width: 65px;
 }
 @media (min-width: 467px) {
-  /* line 81, ../../../components/sass/modules/_slice_blocks2.scss */
+  /* line 82, ../../../components/sass/modules/_slice_blocks2.scss */
   .slice_blocks2 .mapButton {
     margin-right: 5px;
     margin-top: 27px;
   }
 }
 @media (min-width: 768px) {
-  /* line 88, ../../../components/sass/modules/_slice_blocks2.scss */
+  /* line 89, ../../../components/sass/modules/_slice_blocks2.scss */
   .slice_blocks2 .mapButton {
     margin-right: 5px;
     margin-top: 27px;
@@ -1888,11 +1945,11 @@ input[type="checkbox"] + label, input[type="radio"] + label {
 /* line 109, ../../../components/sass/modules/_system_statusbar.scss */
 #DivLoginBox .shadedbox td a {
   text-decoration: none;
-  color: #0db0d9;
+  color: #0097d8;
 }
 /* line 114, ../../../components/sass/modules/_system_statusbar.scss */
 #DivLoginBox .shadedbox td a:hover {
-  color: #13a9ce;
+  color: #005296;
 }
 /* line 118, ../../../components/sass/modules/_system_statusbar.scss */
 #DivLoginBox .shadedbox td img {
@@ -1916,14 +1973,14 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  border: 2px solid #5c9cc9;
-  background-color: #5c9cc9;
+  border: 2px solid #31aeb6;
+  background-color: #31aeb6;
   color: #FFFFFF;
 }
 /* line 144, ../../../components/sass/modules/_system_statusbar.scss */
 #DivLoginBox .shadedbox td .button:hover, #DivLoginBox .button:hover {
-  background-color: #82b3d6;
-  border: 2px solid #82b3d6;
+  background-color: #4bc7cf;
+  border: 2px solid #4bc7cf;
   color: #FFFFFF;
 }
 /* line 150, ../../../components/sass/modules/_system_statusbar.scss */
