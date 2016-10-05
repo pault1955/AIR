@@ -43,13 +43,12 @@ $(document).ready(function () {
     },
     'init': function(){
       if ($('body').hasClass('guest_user')) {
-        $('<li class="sign_in_nav"><div class="statusbar"><a href="/user/login.aspx" title="Login to access more features">Login</a><a href="/User/Registration.aspx" title="Apply for web site username and password" class="register_link">Register</a></div></li>').insertAfter('.slicknav_nav > li.slicknav_parent:last-child').fadeIn("slow");
+        $('<li class="sign_in_nav"><div class="statusbar"><a href="/user/login.aspx" title="Login to access more features">Login</a><a href="/User/Registration.aspx" title="Apply for web site username and password" class="register_link">Register</a></div></li>').insertAfter('.slicknav_nav > .last_item').fadeIn("slow");
       }else{
-        $('<li class="log_out_nav"><div class="statusbar"><a href="/User/Logout.aspx" title="Sign out of the web site" class="logout_link">Logout</a><a href="/Admin/Default.aspx" title="Access site administration pages" class="weboffice_link">Web Office</a></div></li>').insertAfter('.slicknav_nav > li.slicknav_parent:last-child').fadeIn("slow");
+        $('<li class="log_out_nav"><div class="statusbar"><a href="/User/Logout.aspx" title="Sign out of the web site" class="logout_link">Logout</a><a href="/Admin/Default.aspx" title="Access site administration pages" class="weboffice_link">Web Office</a></div></li>').insertAfter('.slicknav_nav > .last_item').fadeIn("slow");
       }
     }
   });
-
 
   $('.slice_slideshow_full_width  .bannerSlides .gallery_ul').show().bxSlider({
     mode: 'fade',
@@ -61,16 +60,25 @@ $(document).ready(function () {
     preloadImages: 'all'
   });
 
-/*
-  $( '.slice_slideshow_full_width  .bannerSlides ul li.gallery_li a img' ).each(function( ) {
-    var slideLink = $(this).parent().attr('href');
-    var alt = $(this).attr('alt');
-    var data = $.parseHTML( alt );
-    var title = '<div class="slideTitle">' + ($(data).text().split('*')[ 0 ] || '') + '</div>';
-    var subtitle = '<div class="slideText">' + ($(data).text().split('*')[ 1 ] || '') + '</div>';
-    var caption = '<div class="caption">' + title + '<div class="divider"></div>' + subtitle + '<a href="' + slideLink + '" class="slideButton">MORE DETAILS</a></div>';
-    $(caption).insertAfter( this );
+    $('.slice_events img, .slice_media img').each(function(index) {
+        var imagePath = $(this).attr('src');
+        $(this).attr('src',imagePath.replace('/Publisher/GetResizedImage.aspx?w=360&amp;h=182&amp;url=/','/'));
+    });
+
+    /* remove media list span */
+
+    $(".blocks3 > span > div").unwrap();
+
+  $('.slice_blocks3.slice_events .upcomingEventsTitle a').each(function (index) {
+    var titleLink = $(this).attr("href");
+    $(this).parent().parent().find('.upcomingEventsLink').wrapInner('<a  href="' + titleLink + '">');;
   });
-*/
+
+  $('.slice_blocks3.slice_media .mediaListTitle a').each(function (index) {
+    var mediaLink = $(this).attr("href");
+    $(this).parent().parent().find('.mediaListLink').wrapInner('<a  href="' + mediaLink + '">');
+  });
+
+
 
 });

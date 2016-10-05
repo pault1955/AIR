@@ -295,16 +295,16 @@ input[type="checkbox"], input[type="radio"] {
 */
 /* line 6, ../../../components/sass/_base.scss */
 html {
-  font-size: 0.625em;
+  font-size: 0.525rem;
 }
 
 /* line 11, ../../../components/sass/_base.scss */
 body {
   color: #3f4663;
   font-family: Lato, Arial, sans-serif;
-  font-size: 0.625rem;
-  line-height: 0.825rem;
-  background-color: #FFFFFF;
+  font-size: 0.525rem;
+  line-height: 0.725rem;
+  background-color: #fff;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -500,8 +500,8 @@ input[type="checkbox"] + label, input[type="radio"] + label {
 @media (min-width: 768px) {
   /* line 190, ../../../components/sass/_base.scss */
   body {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 0.625rem;
+    line-height: 0.825rem;
   }
 
   /* line 196, ../../../components/sass/_base.scss */
@@ -763,13 +763,13 @@ input[type="checkbox"] + label, input[type="radio"] + label {
 /* line 204, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_menu .slicknav_menutxt {
   display: block;
-  line-height: 1.125rem;
+  line-height: 1.025rem;
   float: left;
 }
 /* line 209, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_menu .slicknav_icon {
   float: left;
-  margin: 0.188em 0 0 0.438em;
+  margin: 0 0 0 0.438em;
 }
 /* line 213, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_menu .slicknav_no-text {
@@ -854,14 +854,14 @@ input[type="checkbox"] + label, input[type="radio"] + label {
 }
 /* line 281, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_menu .slicknav_menutxt {
-  color: #FFFFFF;
+  color: #fff;
   font-weight: normal;
   text-shadow: none;
   background: #005296;
 }
 /* line 287, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_menu .slicknav_icon-bar {
-  background-color: #FFFFFF;
+  background-color: #fff;
 }
 /* line 291, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_btn {
@@ -879,10 +879,10 @@ input[type="checkbox"] + label, input[type="radio"] + label {
 }
 /* line 304, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_nav {
-  color: #FFFFFF;
+  color: #fff;
   margin: 0;
   padding: 1px 0;
-  font-size: 0.625rem;
+  font-size: 0.525rem;
   list-style: none;
   overflow: hidden;
   background-color: #f2f2f5;
@@ -902,7 +902,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
 /* line 322, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_nav .slicknav_row:hover {
   background: #005296;
-  color: #FFFFFF;
+  color: #fff;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
@@ -943,7 +943,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
 }
 /* line 361, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_brand {
-  color: #FFFFFF;
+  color: #fff;
   font-size: 18px;
   line-height: 30px;
   padding: 7px 12px;
@@ -954,23 +954,19 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   background: #f2f2f5;
   color: #005296;
 }
-/* line 374, ../../../components/sass/modules/_slice_header.scss */
-.slice_header .slicknav_open > a a, .slice_header .slicknav_open > a > a {
-  color: #005296 !important;
-}
-/* line 378, ../../../components/sass/modules/_slice_header.scss */
+/* line 380, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_open > ul {
   background: #f2f2f5;
   padding-left: 12px;
 }
-/* line 382, ../../../components/sass/modules/_slice_header.scss */
+/* line 384, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_open > ul li a {
   padding-left: 12px;
 }
-/* line 387, ../../../components/sass/modules/_slice_header.scss */
+/* line 389, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_btn.slicknav_open .slicknav_icon:before {
   content: 'X';
-  color: #FFFFFF;
+  color: #fff;
   font-weight: 500;
   font-size: 16px;
   line-height: 6px;
@@ -981,74 +977,74 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   display: block;
   margin: 0 3px;
 }
-/* line 402, ../../../components/sass/modules/_slice_header.scss */
+/* line 404, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_btn.slicknav_open .slicknav_icon .slicknav_icon-bar {
   display: none;
 }
-/* line 410, ../../../components/sass/modules/_slice_header.scss */
+/* line 412, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .slicknav_nav ul .slicknav_parent.slicknav_open > .slciknav_row {
   background-color: #5c9cc9;
 }
 @media only screen and (min-width: 768px) {
-  /* line 415, ../../../components/sass/modules/_slice_header.scss */
+  /* line 417, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .navbar {
     display: block;
     margin-bottom: 20px;
     margin-top: 0;
   }
-  /* line 420, ../../../components/sass/modules/_slice_header.scss */
+  /* line 422, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .siteLogo img {
     max-width: 96%;
   }
-  /* line 423, ../../../components/sass/modules/_slice_header.scss */
+  /* line 425, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .siteLogoName .siteName a {
     font-size: 3.64rem;
   }
-  /* line 426, ../../../components/sass/modules/_slice_header.scss */
+  /* line 428, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .siteLogoName {
     text-align: center;
   }
-  /* line 429, ../../../components/sass/modules/_slice_header.scss */
+  /* line 431, ../../../components/sass/modules/_slice_header.scss */
   .slice_header #mobile_nav {
     display: none;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 436, ../../../components/sass/modules/_slice_header.scss */
+  /* line 438, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .siteLogoName {
     margin-top: 0;
   }
-  /* line 440, ../../../components/sass/modules/_slice_header.scss */
+  /* line 442, ../../../components/sass/modules/_slice_header.scss */
   .slice_header nav a {
     font-size: 1.6rem;
   }
-  /* line 444, ../../../components/sass/modules/_slice_header.scss */
+  /* line 446, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .root_menu {
     padding-left: 0;
     margin: 0 auto;
   }
-  /* line 448, ../../../components/sass/modules/_slice_header.scss */
+  /* line 450, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .root_menu > li > a {
     padding: 20px 10px;
   }
 }
 @media only screen and (min-width: 768px) and (min-width: 992px) {
-  /* line 448, ../../../components/sass/modules/_slice_header.scss */
+  /* line 450, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .root_menu > li > a {
     padding: 36px 10px 35px;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  /* line 461, ../../../components/sass/modules/_slice_header.scss */
+  /* line 463, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .navbar {
     margin-top: 0;
   }
-  /* line 464, ../../../components/sass/modules/_slice_header.scss */
+  /* line 466, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .navbar a {
     font-size: 1.8rem;
   }
-  /* line 469, ../../../components/sass/modules/_slice_header.scss */
+  /* line 471, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .root_menu > li ul a {
     font-size: 1.7rem;
   }
@@ -1112,7 +1108,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
 }
 /* line 57, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
 .slice_slideshow_full_width .bx-wrapper .bx-pager.bx-default-pager a {
-  background: #c6c6c6;
+  background: #dadee4;
   -webkit-transition: background-color 500ms ease;
   -o-transition: background-color 500ms ease;
   transition: background-color 500ms ease;
@@ -1125,7 +1121,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
 /* line 69, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
 .slice_slideshow_full_width .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .slice_slideshow_full_width .bx-wrapper .bx-pager.bx-default-pager a.active {
-  background: #0067b0;
+  background: #0097d8;
 }
 /* line 73, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
 .slice_slideshow_full_width .caption {
@@ -1162,7 +1158,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   margin-bottom: 20px;
   font-family: Lato, Arial, sans-serif;
   font-size: 2rem;
-  color: #FFFFFF;
+  color: #fff;
   line-height: 2.5rem;
   font-weight: 600;
   text-align: center;
@@ -1170,8 +1166,8 @@ input[type="checkbox"] + label, input[type="radio"] + label {
 }
 /* line 114, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
 .slice_slideshow_full_width .caption .slideButton {
-  color: #FFFFFF;
-  border: 2px solid #FFFFFF;
+  color: #fff;
+  border: 2px solid #fff;
   background-color: transparent;
   display: none;
   font-family: Lato, Arial, sans-serif;
@@ -1188,7 +1184,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
 }
 /* line 131, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
 .slice_slideshow_full_width .caption .slideButton:hover {
-  background-color: #FFFFFF;
+  background-color: #fff;
   color: #5c9cc9;
 }
 @media (min-width: 480px) {
@@ -1283,7 +1279,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
 /* line 38, ../../../components/sass/modules/_slice_blocks2.scss */
 .slice_blocks2 .block2-1, .slice_blocks2 .block2-2 {
   padding: 30px 30px 30px 60px;
-  color: #424242;
+  color: #3f4663;
   font-size: 1.6rem;
   line-height: 1.8rem;
   background-position: 25px 27px;
@@ -1291,7 +1287,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
 }
 /* line 46, ../../../components/sass/modules/_slice_blocks2.scss */
 .slice_blocks2 .block2-1 span, .slice_blocks2 .block2-2 span {
-  color: #0067b0;
+  color: #0097d8;
   font-weight: 700;
 }
 /* line 52, ../../../components/sass/modules/_slice_blocks2.scss */
@@ -1321,9 +1317,9 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
-  border: 1px solid #31aeb6;
-  background-color: #31aeb6;
-  color: #FFFFFF;
+  border: 1px solid #0097d8;
+  background-color: #0097d8;
+  color: #fff;
   width: 65px;
 }
 @media (min-width: 467px) {
@@ -1341,207 +1337,503 @@ input[type="checkbox"] + label, input[type="radio"] + label {
     padding: 5px 15px;
   }
 }
+/* line 97, ../../../components/sass/modules/_slice_blocks2.scss */
+.slice_blocks2 .mapButton:hover {
+  background-color: #005296;
+}
 
-/* line 11, ../../../components/sass/modules/_slice_blocks3.scss */
-.slice_blocks3 .blocks3 > div {
+/* line 11, ../../../components/sass/modules/_slice_blocks3a.scss */
+.slice_blocks3.slice_started .blocks3 > div {
   width: 97.58454%;
   float: left;
   margin-left: 1.20773%;
   margin-right: 1.20773%;
   margin-bottom: 40px;
 }
-/* line 15, ../../../components/sass/modules/_slice_blocks3.scss */
-.slice_blocks3 .blocks3 > div:last-of-type {
+/* line 15, ../../../components/sass/modules/_slice_blocks3a.scss */
+.slice_blocks3.slice_started .blocks3 > div:last-of-type {
   margin-bottom: 0;
 }
 @media (min-width: 467px) {
-  /* line 11, ../../../components/sass/modules/_slice_blocks3.scss */
-  .slice_blocks3 .blocks3 > div {
+  /* line 11, ../../../components/sass/modules/_slice_blocks3a.scss */
+  .slice_blocks3.slice_started .blocks3 > div {
     width: 47.58454%;
     float: left;
     margin-left: 1.20773%;
     margin-right: 1.20773%;
   }
-  /* line 22, ../../../components/sass/modules/_slice_blocks3.scss */
-  .slice_blocks3 .blocks3 > div:last-of-type {
+  /* line 22, ../../../components/sass/modules/_slice_blocks3a.scss */
+  .slice_blocks3.slice_started .blocks3 > div:last-of-type {
     margin-left: 25%;
     margin-top: 40px;
     margin-bottom: 40px;
   }
 }
 @media (min-width: 768px) {
-  /* line 11, ../../../components/sass/modules/_slice_blocks3.scss */
-  .slice_blocks3 .blocks3 > div {
+  /* line 11, ../../../components/sass/modules/_slice_blocks3a.scss */
+  .slice_blocks3.slice_started .blocks3 > div {
     width: 30.91787%;
     float: left;
     margin-left: 1.20773%;
     margin-right: 1.20773%;
   }
-  /* line 32, ../../../components/sass/modules/_slice_blocks3.scss */
-  .slice_blocks3 .blocks3 > div:last-of-type {
+  /* line 32, ../../../components/sass/modules/_slice_blocks3a.scss */
+  .slice_blocks3.slice_started .blocks3 > div:last-of-type {
     margin-left: 1.20773%;
     margin-top: 0;
   }
 }
 
-/* line 46, ../../../components/sass/modules/_slice_blocks3.scss */
-.slice_blocks3 {
-  padding: 56px 0 60px;
+/* line 46, ../../../components/sass/modules/_slice_blocks3a.scss */
+.slice_blocks3.slice_started {
+  padding: 36px 0 40px;
   background-color: #f2f2f5;
 }
 /* line 22, ../../../components/sass/_mixins.scss */
-.slice_blocks3:before, .slice_blocks3:after {
+.slice_blocks3.slice_started:before, .slice_blocks3.slice_started:after {
   content: '';
   display: table;
 }
 /* line 27, ../../../components/sass/_mixins.scss */
-.slice_blocks3:after {
+.slice_blocks3.slice_started:after {
   clear: both;
 }
-/* line 51, ../../../components/sass/modules/_slice_blocks3.scss */
-.slice_blocks3 .blockTitle {
+/* line 51, ../../../components/sass/modules/_slice_blocks3a.scss */
+.slice_blocks3.slice_started .blockTitle {
   font-size: 3.6rem;
   line-height: 4.1rem;
-  color: #0067b0;
+  color: #3f4663;
   text-align: center;
   padding: 0 0 40px;
 }
-/* line 60, ../../../components/sass/modules/_slice_blocks3.scss */
-.slice_blocks3 .blocks3 {
+/* line 60, ../../../components/sass/modules/_slice_blocks3a.scss */
+.slice_blocks3.slice_started .blocks3 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-/* line 67, ../../../components/sass/modules/_slice_blocks3.scss */
-.slice_blocks3 .blocks3 > div {
+/* line 67, ../../../components/sass/modules/_slice_blocks3a.scss */
+.slice_blocks3.slice_started .blocks3 > div {
   display: flex;
   flex-direction: column;
-  background-color: #FFFFFF;
+  background-color: #fff;
 }
-/* line 74, ../../../components/sass/modules/_slice_blocks3.scss */
-.slice_blocks3 .blocks3 > div .articleListImage img {
+/* line 74, ../../../components/sass/modules/_slice_blocks3a.scss */
+.slice_blocks3.slice_started .blocks3 > div .articleListImage img {
   width: 100%;
 }
-/* line 80, ../../../components/sass/modules/_slice_blocks3.scss */
-.slice_blocks3 .blocks3 > div .articleListSummary {
+/* line 80, ../../../components/sass/modules/_slice_blocks3a.scss */
+.slice_blocks3.slice_started .blocks3 > div .articleListSummary {
   font-size: 1.8rem;
   line-height: 2.3rem;
-  color: #424242;
+  color: #3f4663;
   padding: 15px 30px 25px !important;
   border-bottom: 2px solid #f2f2f5;
   flex: 1 0 auto;
 }
-/* line 91, ../../../components/sass/modules/_slice_blocks3.scss */
-.slice_blocks3 .blocks3 > div .articleListTitle a {
+/* line 89, ../../../components/sass/modules/_slice_blocks3a.scss */
+.slice_blocks3.slice_started .blocks3 > div .articleListTitle {
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+}
+/* line 95, ../../../components/sass/modules/_slice_blocks3a.scss */
+.slice_blocks3.slice_started .blocks3 > div .articleListTitle a {
   font-size: 1.8rem;
-  color: #0067b0;
+  color: #0097d8;
   padding: 18px 10px 18px 30px;
   display: inline-block;
+  width: 100%;
 }
-/* line 96, ../../../components/sass/modules/_slice_blocks3.scss */
-.slice_blocks3 .blocks3 > div .articleListTitle a:hover {
-  opacity: 0.7;
+/* line 101, ../../../components/sass/modules/_slice_blocks3a.scss */
+.slice_blocks3.slice_started .blocks3 > div .articleListTitle a:hover {
+  color: #fff;
 }
-/* line 101, ../../../components/sass/modules/_slice_blocks3.scss */
-.slice_blocks3 .blocks3 > div .articleListTitle:after {
+@media (min-width: 768px) {
+  /* line 106, ../../../components/sass/modules/_slice_blocks3a.scss */
+  .slice_blocks3.slice_started .blocks3 > div .articleListTitle a {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+}
+/* line 113, ../../../components/sass/modules/_slice_blocks3a.scss */
+.slice_blocks3.slice_started .blocks3 > div .articleListTitle:after {
   content: ".";
   display: block;
   float: right;
   background: url(../images/moreArrow.png) no-repeat 0 13px;
   width: 30px;
   height: 40px;
-  color: #f2f2f5;
+  color: #bcbcbc;
   text-indent: -9999px;
+  margin-top: -43px;
 }
 @media (min-width: 768px) {
-  /* line 114, ../../../components/sass/modules/_slice_blocks3.scss */
-  .slice_blocks3 .blocks3 > div .articleListTitle:after {
+  /* line 125, ../../../components/sass/modules/_slice_blocks3a.scss */
+  .slice_blocks3.slice_started .blocks3 > div .articleListTitle:after {
     background-position: 0px 22px;
+    margin-top: -55px;
   }
 }
+/* line 131, ../../../components/sass/modules/_slice_blocks3a.scss */
+.slice_blocks3.slice_started .blocks3 > div .articleListTitle:hover {
+  background-color: #3f4663;
+  color: #fff;
+}
 
-/* line 9, ../../../components/sass/modules/_slice_blocks4.scss */
-.slice_blocks4 .iconBlock {
-  width: 47.58454%;
+/* line 11, ../../../components/sass/modules/_slice_blocks3b.scss */
+.slice_blocks3.slice_events .blocks3 > div {
+  width: 97.58454%;
   float: left;
   margin-left: 1.20773%;
   margin-right: 1.20773%;
+  margin-bottom: 40px;
 }
-@media (min-width: 768px) {
-  /* line 9, ../../../components/sass/modules/_slice_blocks4.scss */
-  .slice_blocks4 .iconBlock {
-    width: 22.58454%;
+/* line 15, ../../../components/sass/modules/_slice_blocks3b.scss */
+.slice_blocks3.slice_events .blocks3 > div:last-of-type {
+  margin-bottom: 0;
+}
+@media (min-width: 467px) {
+  /* line 11, ../../../components/sass/modules/_slice_blocks3b.scss */
+  .slice_blocks3.slice_events .blocks3 > div {
+    width: 47.58454%;
     float: left;
     margin-left: 1.20773%;
     margin-right: 1.20773%;
   }
+  /* line 22, ../../../components/sass/modules/_slice_blocks3b.scss */
+  .slice_blocks3.slice_events .blocks3 > div:last-of-type {
+    margin-left: 25%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 11, ../../../components/sass/modules/_slice_blocks3b.scss */
+  .slice_blocks3.slice_events .blocks3 > div {
+    width: 30.91787%;
+    float: left;
+    margin-left: 1.20773%;
+    margin-right: 1.20773%;
+  }
+  /* line 32, ../../../components/sass/modules/_slice_blocks3b.scss */
+  .slice_blocks3.slice_events .blocks3 > div:last-of-type {
+    margin-left: 1.20773%;
+    margin-top: 0;
+  }
 }
 
-/* line 22, ../../../components/sass/modules/_slice_blocks4.scss */
-.slice_blocks4 {
-  padding: 0 0 60px;
-  background-color: #FFFFFF;
+/* line 46, ../../../components/sass/modules/_slice_blocks3b.scss */
+.slice_blocks3.slice_events {
+  padding: 36px 0 0;
+  background-color: #fff;
 }
 /* line 22, ../../../components/sass/_mixins.scss */
-.slice_blocks4:before, .slice_blocks4:after {
+.slice_blocks3.slice_events:before, .slice_blocks3.slice_events:after {
   content: '';
   display: table;
 }
 /* line 27, ../../../components/sass/_mixins.scss */
-.slice_blocks4:after {
+.slice_blocks3.slice_events:after {
   clear: both;
 }
-/* line 29, ../../../components/sass/modules/_slice_blocks4.scss */
-.slice_blocks4 .container .blocks4 {
+@media (min-width: 768px) {
+  /* line 46, ../../../components/sass/modules/_slice_blocks3b.scss */
+  .slice_blocks3.slice_events {
+    padding-top: 60px;
+  }
+}
+/* line 54, ../../../components/sass/modules/_slice_blocks3b.scss */
+.slice_blocks3.slice_events .blockTitle {
+  font-size: 3.6rem;
+  line-height: 4.1rem;
+  color: #3f4663;
   text-align: center;
+  padding: 0 0 40px;
+}
+/* line 63, ../../../components/sass/modules/_slice_blocks3b.scss */
+.slice_blocks3.slice_events .blocks3 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-/* line 35, ../../../components/sass/modules/_slice_blocks4.scss */
-.slice_blocks4 .container .blocks4 .iconBlock {
+/* line 69, ../../../components/sass/modules/_slice_blocks3b.scss */
+.slice_blocks3.slice_events .blocks3 > div {
   display: flex;
   flex-direction: column;
-  background-color: #FFFFFF;
-  margin-top: 50px;
+  background-color: #f2f2f5;
+}
+/* line 76, ../../../components/sass/modules/_slice_blocks3b.scss */
+.slice_blocks3.slice_events .blocks3 > div .upcomingEventsImage img {
+  width: 100%;
+}
+/* line 84, ../../../components/sass/modules/_slice_blocks3b.scss */
+.slice_blocks3.slice_events .blocks3 > div .upcomingEventsTitle a {
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  color: #3f4663;
+  padding: 10px 15px 5px !important;
+  display: inline-block;
+}
+/* line 93, ../../../components/sass/modules/_slice_blocks3b.scss */
+.slice_blocks3.slice_events .blocks3 > div .upcomingEventsDate {
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  color: #0097d8;
+  padding: 0 15px 15px !important;
+}
+/* line 100, ../../../components/sass/modules/_slice_blocks3b.scss */
+.slice_blocks3.slice_events .blocks3 > div .upcomingEventsDesc {
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  color: #3f4663;
+  padding: 0 15px 15px !important;
+  border-bottom: 2px solid #fff;
   flex: 1 0 auto;
 }
-/* line 43, ../../../components/sass/modules/_slice_blocks4.scss */
-.slice_blocks4 .container .blocks4 .iconBlock .iconBlockImage {
+/* line 109, ../../../components/sass/modules/_slice_blocks3b.scss */
+.slice_blocks3.slice_events .blocks3 > div .upcomingEventsLink {
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+}
+/* line 116, ../../../components/sass/modules/_slice_blocks3b.scss */
+.slice_blocks3.slice_events .blocks3 > div .upcomingEventsLink a {
+  font-size: 1.8rem;
+  color: #0097d8;
+  padding: 18px 10px 18px 15px;
+  display: inline-block;
+  width: 100%;
+}
+/* line 122, ../../../components/sass/modules/_slice_blocks3b.scss */
+.slice_blocks3.slice_events .blocks3 > div .upcomingEventsLink a:hover {
+  color: #fff;
+}
+@media (min-width: 768px) {
+  /* line 127, ../../../components/sass/modules/_slice_blocks3b.scss */
+  .slice_blocks3.slice_events .blocks3 > div .upcomingEventsLink a {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+}
+/* line 134, ../../../components/sass/modules/_slice_blocks3b.scss */
+.slice_blocks3.slice_events .blocks3 > div .upcomingEventsLink:after {
+  content: ".";
+  display: block;
+  float: right;
+  background: url(../images/moreArrow.png) no-repeat 0 13px;
+  width: 30px;
+  height: 40px;
+  color: #bcbcbc;
+  text-indent: -9999px;
+  margin-top: -43px;
+}
+@media (min-width: 768px) {
+  /* line 146, ../../../components/sass/modules/_slice_blocks3b.scss */
+  .slice_blocks3.slice_events .blocks3 > div .upcomingEventsLink:after {
+    background-position: 0px 22px;
+    margin-top: -55px;
+  }
+}
+/* line 153, ../../../components/sass/modules/_slice_blocks3b.scss */
+.slice_blocks3.slice_events .blocks3 > div .upcomingEventsLink:hover {
+  background-color: #3f4663;
+  color: #fff;
+}
+/* line 161, ../../../components/sass/modules/_slice_blocks3b.scss */
+.slice_blocks3.slice_events .calendarLink {
+  text-align: center;
+  display: block;
+  padding: 15px 20px;
+  font-size: 1.8rem;
+  color: #3f4663;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  background-color: #fff;
+  max-width: 190px;
+  margin: 30px auto;
+}
+/* line 173, ../../../components/sass/modules/_slice_blocks3b.scss */
+.slice_blocks3.slice_events .calendarLink:hover {
+  color: #fff;
+  border: 1px solid #005296;
+  background-color: #005296;
+}
+
+/* line 11, ../../../components/sass/modules/_slice_blocks3c.scss */
+.slice_blocks3.slice_media .blocks3 > div {
+  width: 97.58454%;
+  float: left;
+  margin-left: 1.20773%;
+  margin-right: 1.20773%;
+  margin-bottom: 40px;
+}
+/* line 15, ../../../components/sass/modules/_slice_blocks3c.scss */
+.slice_blocks3.slice_media .blocks3 > div:last-of-type {
+  margin-bottom: 0;
+}
+@media (min-width: 467px) {
+  /* line 11, ../../../components/sass/modules/_slice_blocks3c.scss */
+  .slice_blocks3.slice_media .blocks3 > div {
+    width: 47.58454%;
+    float: left;
+    margin-left: 1.20773%;
+    margin-right: 1.20773%;
+  }
+  /* line 22, ../../../components/sass/modules/_slice_blocks3c.scss */
+  .slice_blocks3.slice_media .blocks3 > div:last-of-type {
+    margin-left: 25%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 11, ../../../components/sass/modules/_slice_blocks3c.scss */
+  .slice_blocks3.slice_media .blocks3 > div {
+    width: 30.91787%;
+    float: left;
+    margin-left: 1.20773%;
+    margin-right: 1.20773%;
+  }
+  /* line 32, ../../../components/sass/modules/_slice_blocks3c.scss */
+  .slice_blocks3.slice_media .blocks3 > div:last-of-type {
+    margin-left: 1.20773%;
+    margin-top: 0;
+  }
+}
+
+/* line 46, ../../../components/sass/modules/_slice_blocks3c.scss */
+.slice_blocks3.slice_media {
+  padding: 36px 0 0;
+  background-color: #f2f2f5;
+}
+/* line 22, ../../../components/sass/_mixins.scss */
+.slice_blocks3.slice_media:before, .slice_blocks3.slice_media:after {
+  content: '';
+  display: table;
+}
+/* line 27, ../../../components/sass/_mixins.scss */
+.slice_blocks3.slice_media:after {
+  clear: both;
+}
+/* line 50, ../../../components/sass/modules/_slice_blocks3c.scss */
+.slice_blocks3.slice_media .blockTitle {
+  font-size: 3.6rem;
+  line-height: 4.1rem;
+  color: #3f4663;
+  text-align: center;
+  padding: 0 0 40px;
+}
+/* line 59, ../../../components/sass/modules/_slice_blocks3c.scss */
+.slice_blocks3.slice_media .blocks3 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* line 65, ../../../components/sass/modules/_slice_blocks3c.scss */
+.slice_blocks3.slice_media .blocks3 > div {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+/* line 72, ../../../components/sass/modules/_slice_blocks3c.scss */
+.slice_blocks3.slice_media .blocks3 > div .mediaListImage img {
+  width: 100%;
+}
+/* line 80, ../../../components/sass/modules/_slice_blocks3c.scss */
+.slice_blocks3.slice_media .blocks3 > div .mediaListTitle a {
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  color: #3f4663;
+  padding: 10px 15px 5px !important;
+  display: inline-block;
+}
+/* line 89, ../../../components/sass/modules/_slice_blocks3c.scss */
+.slice_blocks3.slice_media .blocks3 > div .mediaListDate {
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  color: #0097d8;
+  padding: 0 15px 15px !important;
+}
+/* line 96, ../../../components/sass/modules/_slice_blocks3c.scss */
+.slice_blocks3.slice_media .blocks3 > div .mediaListSpeaker {
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  color: #3f4663;
+  padding: 0 15px 15px !important;
+  border-bottom: 2px solid #f2f2f5;
   flex: 1 0 auto;
-  min-height: 65px;
 }
-/* line 46, ../../../components/sass/modules/_slice_blocks4.scss */
-.slice_blocks4 .container .blocks4 .iconBlock .iconBlockImage img {
-  width: initial;
+/* line 105, ../../../components/sass/modules/_slice_blocks3c.scss */
+.slice_blocks3.slice_media .blocks3 > div .mediaListLink {
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
 }
-/* line 51, ../../../components/sass/modules/_slice_blocks4.scss */
-.slice_blocks4 .container .blocks4 .iconBlock .iconBlockTitle {
-  flex: 1 0 auto;
-  font-size: 2rem;
-  line-height: 2.4rem;
-  color: #0067b0;
-  padding: 10px 15px;
+/* line 112, ../../../components/sass/modules/_slice_blocks3c.scss */
+.slice_blocks3.slice_media .blocks3 > div .mediaListLink a {
+  font-size: 1.8rem;
+  color: #0097d8;
+  padding: 18px 10px 18px 15px;
+  display: inline-block;
+  width: 100%;
 }
-/* line 60, ../../../components/sass/modules/_slice_blocks4.scss */
-.slice_blocks4 .container .blocks4 .iconBlock .iconBlockSummary {
-  font-size: 1.6rem;
-  line-height: 2rem;
-  color: #424242;
-  padding: 10px 30px 20px !important;
-  flex: 1 0 auto;
+/* line 118, ../../../components/sass/modules/_slice_blocks3c.scss */
+.slice_blocks3.slice_media .blocks3 > div .mediaListLink a:hover {
+  color: #fff;
 }
-/* line 68, ../../../components/sass/modules/_slice_blocks4.scss */
-.slice_blocks4 .container .blocks4 .iconBlock .iconBlockLink a {
-  font-size: 1.5rem;
-  line-height: 1.8rem;
-  color: #0067b0;
-  padding: 14px 0 18px;
-  flex: 1 0 auto;
+@media (min-width: 768px) {
+  /* line 123, ../../../components/sass/modules/_slice_blocks3c.scss */
+  .slice_blocks3.slice_media .blocks3 > div .mediaListLink a {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
 }
-/* line 74, ../../../components/sass/modules/_slice_blocks4.scss */
-.slice_blocks4 .container .blocks4 .iconBlock .iconBlockLink a:hover {
-  opacity: 0.7;
+/* line 130, ../../../components/sass/modules/_slice_blocks3c.scss */
+.slice_blocks3.slice_media .blocks3 > div .mediaListLink:after {
+  content: ".";
+  display: block;
+  float: right;
+  background: url(../images/moreArrow.png) no-repeat 0 13px;
+  width: 30px;
+  height: 40px;
+  color: #bcbcbc;
+  text-indent: -9999px;
+  margin-top: -43px;
+}
+@media (min-width: 768px) {
+  /* line 142, ../../../components/sass/modules/_slice_blocks3c.scss */
+  .slice_blocks3.slice_media .blocks3 > div .mediaListLink:after {
+    background-position: 0px 22px;
+    margin-top: -55px;
+  }
+}
+/* line 149, ../../../components/sass/modules/_slice_blocks3c.scss */
+.slice_blocks3.slice_media .blocks3 > div .mediaListLink:hover {
+  background-color: #3f4663;
+  color: #fff;
+}
+/* line 156, ../../../components/sass/modules/_slice_blocks3c.scss */
+.slice_blocks3.slice_media .mediaLink {
+  text-align: center;
+  display: block;
+  padding: 15px 20px;
+  font-size: 1.8rem;
+  color: #3f4663;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  background-color: #fff;
+  max-width: 190px;
+  margin: 30px auto;
+}
+/* line 168, ../../../components/sass/modules/_slice_blocks3c.scss */
+.slice_blocks3.slice_media .mediaLink:hover {
+  color: #fff;
+  border: 1px solid #005296;
+  background-color: #005296;
 }
 
 /* line 9, ../../../components/sass/modules/_slice_footertop.scss */
@@ -1652,12 +1944,12 @@ input[type="checkbox"] + label, input[type="radio"] + label {
 
 /* line 95, ../../../components/sass/modules/_slice_footertop.scss */
 .footertop2 {
-  color: #c6c6c6;
+  color: #dadee4;
   background-color: #3a3a3a;
 }
 /* line 99, ../../../components/sass/modules/_slice_footertop.scss */
 .footertop2 a {
-  color: #c6c6c6;
+  color: #dadee4;
 }
 /* line 103, ../../../components/sass/modules/_slice_footertop.scss */
 .footertop2 .container {
@@ -1755,7 +2047,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   border: none;
   border-radius: 0 4px 4px 0;
   background-color: #5c9cc9;
-  color: #FFFFFF;
+  color: #fff;
   font-size: 16px;
   text-transform: uppercase;
 }
@@ -1788,7 +2080,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
 }
 /* line 19, ../../../components/sass/modules/_slice_footerbar.scss */
 .slice_footerbar .footerbar a:hover {
-  color: #FFFFFF;
+  color: #fff;
 }
 /* line 23, ../../../components/sass/modules/_slice_footerbar.scss */
 .slice_footerbar .footerbar a#footer_mobile, .slice_footerbar .footerbar a#footer_copyright, .slice_footerbar .footerbar a#footer_tc, .slice_footerbar .footerbar a#footer_privacy, .slice_footerbar .footerbar a #footer_help {
@@ -1869,7 +2161,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   border-radius: 2px;
   background-color: transparent;
   font-size: 1.6rem;
-  color: #c6c6c6;
+  color: #dadee4;
   text-align: center;
   text-decoration: none;
 }
@@ -1973,15 +2265,15 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  border: 2px solid #31aeb6;
-  background-color: #31aeb6;
-  color: #FFFFFF;
+  border: 2px solid #0097d8;
+  background-color: #0097d8;
+  color: #fff;
 }
 /* line 144, ../../../components/sass/modules/_system_statusbar.scss */
 #DivLoginBox .shadedbox td .button:hover, #DivLoginBox .button:hover {
-  background-color: #4bc7cf;
-  border: 2px solid #4bc7cf;
-  color: #FFFFFF;
+  background-color: #0cb6ff;
+  border: 2px solid #0cb6ff;
+  color: #fff;
 }
 /* line 150, ../../../components/sass/modules/_system_statusbar.scss */
 #DivLoginBox .shadedbox td .button:focus {

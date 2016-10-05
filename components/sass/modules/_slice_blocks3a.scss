@@ -1,10 +1,10 @@
 // ======================================
-// slice  3 blocks
+// slice  3a get started
 // ======================================
 
-// slice  3 blocks layout
+// slice  3a layout
 // ======================================
-.slice_blocks3 {
+.slice_blocks3.slice_started {
 
   .blocks3 {
 
@@ -40,23 +40,23 @@
 
 }
 
-// slice  3 blocks style
+// slice  3a style
 // ======================================
 
-.slice_blocks3 {
+.slice_blocks3.slice_started {
   @include clearfix;
-  padding: 56px 0 60px;
+  padding: 36px 0 40px;
 
 
   .blockTitle {
     font-size: 3.6rem;
     line-height: 3.6rem + 0.5rem;
-    color: $purple-dark;
+    color: $block3a_color;
     text-align: center;
     padding: 0 0 40px;
   }
 
-  background-color: $grey-line;
+  background-color: $block3a_background-color;
   .blocks3 {
 
     display: flex;
@@ -68,7 +68,7 @@
 
       display: flex;
       flex-direction: column;
-      background-color: $white;
+      background-color: $block3a_panel_background-color;
 
       .articleListImage {
         img {
@@ -80,21 +80,33 @@
       .articleListSummary {
         font-size: 1.8rem;
         line-height: 1.8rem + 0.5rem;
-        color: $grey-mid;
+        color: $block3a_color;
         padding:15px 30px 25px !important;
-        border-bottom: 2px solid $grey-line;
+        border-bottom: 2px solid $block3a_border-color;
         flex: 1 0 auto;
       }
 
       .articleListTitle {
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
 
         a {
           font-size: 1.8rem;
-          color: $purple-dark;
+          color: $block3a_link-color;
           padding: 18px 10px 18px 30px;
           display: inline-block;
+          width: 100%;
           &:hover {
-            opacity: 0.7;
+            color: $block3a_link-color--hover;
+          }
+
+          @include susy-breakpoint($breakpoint-sm) {
+            & {
+              padding-top: 13px;
+              padding-bottom: 13px;
+            }
           }
 
         }
@@ -105,18 +117,21 @@
           background: url(../images/moreArrow.png) no-repeat 0 13px;
           width: 30px;
           height: 40px;
-          color: $grey-line;
-          // margin-right: 30px;
-          // margin-left: 80px;
+          color: $block3a_arrow-color;
           text-indent: -9999px;
+          margin-top: -43px;
 
           @include susy-breakpoint($breakpoint-sm) {
             & {
               background-position: 0px 22px;
+              margin-top: -55px;
             }
           }
         }
-
+        &:hover {
+          background-color: $block3a_link-background-color--hover;
+          color: $block3a_link-color--hover;
+        }
       }
     }
 

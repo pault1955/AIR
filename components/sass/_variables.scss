@@ -34,9 +34,6 @@ $grey-line : #f2f2f5;
 $grey-mid: #424242;
 $grey-dark  : #4D4D4D;
 $grey-darker  : #3a3a3a;
-$grey-light: #c6c6c6;
-$purple-dark  : #0067b0;
-$white      : #FFFFFF;
 
 //Font variables
 $thin     : 200;
@@ -47,17 +44,18 @@ $heavy    : 800;
 // site defaults
 $default_font-family : Lato, Arial, sans-serif;
 $default_font-color  : #3f4663;
-$default_font-size   : 0.625rem;
+$default_font-size   : 0.525rem;
+$default_font-size-desktop   : 0.625rem;
 $default_line-height : $default_font-size + 0.2rem;
-
+$default_line-height-desktop : $default_font-size-desktop + 0.2rem;
 $default_link_color: #0097d8;
 $default_link-color--hover : #005296;
 
-$default_background-color: $white;
+$default_background-color: #fff;
 
-$default_button-background-color: #31aeb6;
-$default_button-background-color--hover: #ea5b51;
-$default_button-color: $white;
+$default_button-background-color: #0097d8;
+$default_button-background-color--hover: #005296;
+$default_button-color: #fff;
 
 // ======================================
 //  site logo & site name
@@ -100,12 +98,12 @@ $nav_dropdown-color--hover: $default_link_color--hover;
 //  slicknav mobile menu
 // ======================================
 
-$slicknav_button-menu-color: $white;
+$slicknav_button-menu-color: #fff;
 $slicknav_button-text-shadow: rgba(255, 255, 255, 0.75);
 $slicknav_button-background-color: transparent ;
 $slicknav_button-background-color--open: transparent;
-$slicknav-color: $white;
-$slicknav-text-shadow: $white;
+$slicknav-color: #fff;
+$slicknav-text-shadow: #fff;
 $slicknav-header-background-color: #005296;
 $slicknav-top-level-background-color: #f2f2f5;
 $slicknav-background-color: #005296;
@@ -126,20 +124,80 @@ $slicknav-background-parent--open: $blue-light;
 // ======================================
 //  slice banner slideshow
 // ======================================
-$banner_slideshow-background-color: $white;
-$banner_slideshow_pager-background-color: $grey-light;
-$banner_slideshow_pager-background-color--active: $purple-dark;
+$banner_slideshow-background-color: #fff;
+$banner_slideshow_pager-background-color: #dadee4;
+$banner_slideshow_pager-background-color--active: #0097d8;
 $banner_slideshow_pager-width-height: 14px;
-$banner_slideshow_control-background-color: $white;
+$banner_slideshow_control-background-color: #fff;
 $banner_slideshow_slidetitle-font-family: $default_font-family;
 
 // ======================================
 //  slice blocks 2
 // ======================================
 
-$block2-color: $grey-mid;
-$block2-title-color: $purple-dark;
+$block2-color: #3f4663;
+$block2-title-color: #0097d8;
 
+// ======================================
+//  slice get started
+// ======================================
+
+$block3a_background-color: #f2f2f5;
+$block3a_panel_background-color: #fff;
+$block3a_color: #3f4663;
+$block3a_title-color: #3f4663;
+$block3a_link-color: #0097d8;
+$block3a_link-color--hover: #fff;
+$block3a_link-background-color: #fff;
+$block3a_link-background-color--hover: #3f4663;
+$block3a_border-color: #f2f2f5;
+$block3a_arrow-color: #bcbcbc;
+$block3a_date_color: #0097d8;
+
+// ======================================
+//  slice upcoming events
+// ======================================
+
+$block3b_background-color: #fff;
+$block3b_panel_background-color: #f2f2f5;
+$block3b_color: #3f4663;
+$block3b_title-color: #3f4663;
+$block3b_link-color: #0097d8;
+$block3b_link-color--hover: #fff;
+$block3b_link-background-color: #f2f2f5;
+$block3b_link-background-color--hover: #3f4663;
+$block3b_border-color: #fff;
+$block3b_arrow-color: #bcbcbc;
+$block3b_date_color: #0097d8;
+$block3b_button-font-size: 1.8rem;
+$block3b_button-color: #3f4663;
+$block3b_button-color--hover: #fff;
+$block3b_button-border-color: #ebebeb;
+$block3b_button-border-color--hover: #005296;
+$block3b_button-background-color: #fff;
+$block3b_button-background-color--hover: #005296;
+// ======================================
+//  slice latest media
+// ======================================
+
+$block3c_background-color: #f2f2f5;
+$block3c_panel_background-color: #fff;
+$block3c_color: #3f4663;
+$block3c_title-color: #3f4663;
+$block3c_link-color: #0097d8;
+$block3c_link-color--hover: #fff;
+$block3c_link-background-color: #f2f2f5;
+$block3c_link-background-color--hover: #3f4663;
+$block3c_border-color: #f2f2f5;
+$block3c_arrow-color: #bcbcbc;
+$block3c_date_color: #0097d8;
+$block3c_button-font-size: 1.8rem;
+$block3c_button-color: #3f4663;
+$block3c_button-color--hover: #fff;
+$block3c_button-border-color: #ebebeb;
+$block3c_button-border-color--hover: #005296;
+$block3c_button-background-color: #fff;
+$block3c_button-background-color--hover: #005296;
 
 // ======================================
 //  slice footerbar
@@ -162,12 +220,12 @@ $footertop1_background-color: $blue-light;
 // ======================================
 
 $footertop2_background-color: $grey-darker;
-$footertop2_font-color: $grey-light;
-$footertop2_font-color-link: $grey-light;
+$footertop2_font-color: #dadee4;
+$footertop2_font-color-link: #dadee4;
 
 $footertop2_search_button-background-color: $blue-light;
 $footertop2_search_button-background-color--hover: lighten($blue-light, 20%);
-$footertop2_search_button-color: $white;
+$footertop2_search_button-color: #fff;
 
 
 // ======================================
@@ -182,7 +240,7 @@ $system_sitebutton_color: $blue-light;
 // ======================================
 
 $system_statusbar_link_border-color: $grey-border;
-$system_statusbar_link_color: $grey-light;
+$system_statusbar_link_color: #dadee4;
 
 $system_statusbar_loginbox_border-color: $blue-light;
 
@@ -193,20 +251,20 @@ $system_statusbar_loginbox_border-color: $blue-light;
 $system_calendar_day_header-color: $grey-dark;
 $system_calendar_day_header-border-color: #43525a;
 $system_calendar_day_header-background-color: #f6f6f6;
-$system_calendar_day_wrapper_today-background-color: $white;
-$system_calendar_calendar_day_today-background-color: $white;
-$system_calendar_event_all_day-background-color: $white;
-$system_calendar_other_month-background-color: $white;
+$system_calendar_day_wrapper_today-background-color: #fff;
+$system_calendar_calendar_day_today-background-color: #fff;
+$system_calendar_event_all_day-background-color: #fff;
+$system_calendar_other_month-background-color: #fff;
 
 
 $system_profile-background-color: #eef7fb;
 
 $system_tabSelected-background-color: #eef7fb;
 $system_tabSelected-border-color: #eef7fb;
-$system_tabLeft-color: $white;
-$system_tabLeft-border-color: $white;
-$system_tabRight-color: $white;
-$system_tabRight-border-color: $white;
+$system_tabLeft-color: #fff;
+$system_tabLeft-border-color: #fff;
+$system_tabRight-color: #fff;
+$system_tabRight-border-color: #fff;
 $system_tabLink-color: #0cc;
 $system_tabLink-background-color: #f7fbfd;
 $system_tabLink-color--hover: #0CC;
@@ -225,7 +283,7 @@ $system_comment_form_button-border-color: #d1d2d4;
 $system_comment_form_button-color: $grey-dark;
 $system_comment_form_button-background-color--hover: #5ac5c5;
 $system_comment_form_button-border-color--hover: #5ac5c5;
-$system_comment_form_button-color--hover: $white;
+$system_comment_form_button-color--hover: #fff;
 
 //  system - media
 // ======================================
@@ -235,14 +293,14 @@ $system_media_recording_title-color: $grey-dark;
 //  system - rotas
 // ======================================
 
-$system_subMenu-color: $white;
+$system_subMenu-color: #fff;
 $system_subMenu-border-color: #0cc;
 $system_subMenu-background-color: #0cc;
 
 //  system - address
 // ======================================
-$system_address_column-border-color: $white;
-$system_address_user_details_cell-border-color: $white;
+$system_address_column-border-color: #fff;
+$system_address_user_details_cell-border-color: #fff;
 $system_address_address_user_first_name-background-color: #f6f6f6;
 $system_address_address_family_title-background-color: #f6f6f6;
 
@@ -250,9 +308,9 @@ $system_address_address_family_title-background-color: #f6f6f6;
 //  system - popup windows
 // ======================================
 $system_calendar_popup_window-color: $grey-dark;
-$system_calendar_popup_window-background-color: $white;
-$system_calendar_popup_window-title-background-color: $white;
-$system_calendar_popup_window-table-background-color: $white;
+$system_calendar_popup_window-background-color: #fff;
+$system_calendar_popup_window-title-background-color: #fff;
+$system_calendar_popup_window-table-background-color: #fff;
 $system_calendar_day_header-border-color: #43525a;
 
 

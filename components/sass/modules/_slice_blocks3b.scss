@@ -1,0 +1,179 @@
+// ======================================
+// slice  3b upcoming events
+// ======================================
+
+// slice  3b layout
+// ======================================
+.slice_blocks3.slice_events {
+
+  .blocks3 {
+
+    > div {
+      @include span(12);
+      margin-bottom: 40px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      @include susy-breakpoint($breakpoint-ti) {
+        @include span(6);
+
+        &:last-of-type {
+          margin-left: span(3 wide of 12);
+          margin-top: 40px;
+          margin-bottom: 40px;
+        }
+      }
+
+      @include susy-breakpoint($breakpoint-sm) {
+        @include span(4);
+
+        &:last-of-type {
+          margin-left: gutter(12);
+          margin-top: 0;
+
+        }
+      }
+    }
+  }
+
+}
+
+// slice  3b style
+// ======================================
+
+.slice_blocks3.slice_events {
+  @include clearfix;
+  padding: 36px 0 0;
+
+  @include susy-breakpoint($breakpoint-sm) {
+    padding-top: 60px;
+  }
+
+  .blockTitle {
+    font-size: 3.6rem;
+    line-height: 3.6rem + 0.5rem;
+    color: $block3b_color;
+    text-align: center;
+    padding: 0 0 40px;
+  }
+
+  background-color: $block3b_background-color;
+  .blocks3 {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    > div {
+
+      display: flex;
+      flex-direction: column;
+      background-color: $block3b_panel_background-color;
+
+      .upcomingEventsImage {
+        img {
+          width: 100%;
+        }
+
+      }
+
+      .upcomingEventsTitle {
+
+        a {
+          font-size: 2.4rem;
+          line-height: 2.4rem + 0.5rem;
+          color: $block3b_color;
+          padding: 10px 15px 5px !important;
+          display: inline-block;
+        }
+      }
+
+      .upcomingEventsDate {
+        font-size: 1.8rem;
+        line-height: 1.8rem + 0.5rem;
+        color: $block3b_date_color;
+        padding: 0 15px 15px !important;
+
+      }
+      .upcomingEventsDesc {
+        font-size: 1.8rem;
+        line-height: 1.8rem + 0.5rem;
+        color: $block3b_color;
+        padding: 0 15px 15px !important;
+        border-bottom: 2px solid $block3b_border-color;
+        flex: 1 0 auto;
+      }
+
+      .upcomingEventsLink {
+
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+
+        a {
+          font-size: 1.8rem;
+          color: $block3b_link-color;
+          padding: 18px 10px 18px 15px;
+          display: inline-block;
+          width: 100%;
+          &:hover {
+            color: $block3b_link-color--hover;
+          }
+
+          @include susy-breakpoint($breakpoint-sm) {
+            & {
+              padding-top: 13px;
+              padding-bottom: 13px;
+            }
+          }
+
+        }
+        &:after {
+          content: ".";
+          display: block;
+          float: right;
+          background: url(../images/moreArrow.png) no-repeat 0 13px;
+          width: 30px;
+          height: 40px;
+          color: $block3b_arrow-color;
+          text-indent: -9999px;
+          margin-top: -43px;
+
+          @include susy-breakpoint($breakpoint-sm) {
+            & {
+              background-position: 0px 22px;
+              margin-top: -55px;
+            }
+          }
+        }
+
+        &:hover {
+          background-color: $block3b_link-background-color--hover;
+          color: $block3b_link-color--hover;
+        }
+      }
+    }
+  }
+
+  .calendarLink {
+    text-align: center;
+    display: block;
+    padding: 15px 20px;
+    font-size: $block3b_button-font-size;
+    color: $block3b_button-color;
+    border: 1px solid $block3b_button-border-color;
+    border-radius: 3px;
+    background-color: $block3b_button-background-color;
+    max-width:190px;
+    margin: 30px auto;
+
+    &:hover {
+      color: $block3b_button-color--hover;
+      border: 1px solid $block3b_button-border-color--hover;
+      background-color: $block3b_button-background-color--hover;
+    }
+  }
+}

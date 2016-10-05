@@ -208,7 +208,7 @@
     }
     .slicknav_icon {
       float: left;
-      margin: 0.188em 0 0 0.438em;
+      margin: 0 0 0 0.438em;
     }
     .slicknav_no-text {
       margin: 0;
@@ -372,8 +372,10 @@
   }
 
   .slicknav_open > a a, .slicknav_open > a > a {
-    color: $slicknav-color--open !important;
+    // color: $slicknav-color--open !important;
   }
+
+
 
   .slicknav_open > ul {
     background: $slicknav_sub_menu-background-color;

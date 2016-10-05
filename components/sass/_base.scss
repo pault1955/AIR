@@ -4,7 +4,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
 
 html {
-  font-size: 0.625em;
+  font-size: $default_font-size;
 }
 
 
@@ -188,8 +188,8 @@ input[type="checkbox"] + label, input[type="radio"] +  label {
 @media (min-width: $breakpoint-sm) {
 
   body {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: $default_font-size-desktop;
+    line-height: $default_line-height-desktop;
   }
 
 
