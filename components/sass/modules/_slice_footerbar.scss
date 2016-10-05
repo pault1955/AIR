@@ -35,16 +35,13 @@
         width: 100%;
         border: none;
         text-indent: -9999px;
-        background-image: url('../images/churchinsight-logo.png');
-        background-size: 158px 28px;
+        background-image: url('../images/site-by-churchinsight.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-color: transparent;
-        height: 30px;
         margin-bottom: 10px;
 
         &.footer:hover {
-          background-image: url('../images/churchinsight-logo-hover.png');
         }
       }
     }

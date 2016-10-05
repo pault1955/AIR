@@ -200,32 +200,52 @@ $block3c_button-background-color: #fff;
 $block3c_button-background-color--hover: #005296;
 
 // ======================================
-//  slice footerbar
+//  slice icon blocks
 // ======================================
+$iconBlockTitle-font-size: 2.4rem;
+$iconBlockTitle-line-height: $iconBlockTitle-font-size + 0.5rem;
+$iconBlockTitle-color: #3f4663;
+$iconBlockSummary-font-size: 1.8rem;
+$iconBlockSummary-line-height: $iconBlockSummary-font-size + 0.5rem;
+$iconBlockSummary-color: #3f4663;
+$iconBlockLink-font-size: 1.8rem;
+$iconBlockLink-line-height: $iconBlockLink-font-size + 0.5rem;
+$iconBlockLink-color: #0097d8;
+$iconBlockLink-color--hover: #005296;
 
-$footerbar_background-color: $grey-darker;
-$footerbar_font-color: #b1b1b1;
-$footerbar_font-size: 1.3rem;
+
+
 
 
 // ======================================
 //  slice footertop-1
 // ======================================
 
-$footertop1_background-color: $blue-light;
+$footertop1_background-color: #0097d8;
+$footertop1_color: #fff;
+$footerbar1_font-size: 1.8rem;
+$footerbar_icon_background-color--hover: #0581c9;
 
 
 // ======================================
 //  slice footertop-2
 // ======================================
 
-$footertop2_background-color: $grey-darker;
-$footertop2_font-color: #dadee4;
-$footertop2_font-color-link: #dadee4;
-
-$footertop2_search_button-background-color: $blue-light;
-$footertop2_search_button-background-color--hover: lighten($blue-light, 20%);
+$footertop2_background-color: #2f3240;
+$footerbar2_font-size: 1.6rem;
+$footertop2_font-color: #c6c6c6;
+$footertop2_font-color-link: #c6c6c6;
+$footertop2_search_button-background-color: #0097d8;
+$footertop2_search_button-background-color--hover: #0581c9;
 $footertop2_search_button-color: #fff;
+
+// ======================================
+//  slice footerbar
+// ======================================
+
+$footerbar_background-color: #2f3240;
+$footerbar_font-color: #c6c6c6;
+$footerbar_font-size: 1.3rem;
 
 
 // ======================================
@@ -239,10 +259,15 @@ $system_sitebutton_color: $blue-light;
 //  system - statusbar
 // ======================================
 
-$system_statusbar_link_border-color: $grey-border;
-$system_statusbar_link_color: #dadee4;
+$system_statusbar_link_border-color: #484b5b;
+$system_statusbar_link_border-color-hover: #484b5b;
+$system_statusbar_link_color: #c6c6c6;
+$system_statusbar_link_background-color: transparent;
+$system_statusbar_link_background-color--hover: #484b5b;
+$system_statusbar_loginbox_border-color: #c6c6c6;
+$system_statusbar_searchbox_background-color: #484b5b;
+$system_statusbar_searchbox_border-color: #484b5b;
 
-$system_statusbar_loginbox_border-color: $blue-light;
 
 
 //  system - calendar

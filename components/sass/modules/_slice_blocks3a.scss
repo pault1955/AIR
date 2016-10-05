@@ -102,12 +102,6 @@
             color: $block3a_link-color--hover;
           }
 
-          @include susy-breakpoint($breakpoint-sm) {
-            & {
-              padding-top: 13px;
-              padding-bottom: 13px;
-            }
-          }
 
         }
         &:after {
@@ -124,7 +118,7 @@
           @include susy-breakpoint($breakpoint-sm) {
             & {
               background-position: 0px 22px;
-              margin-top: -55px;
+              margin-top: -53px;
             }
           }
         }

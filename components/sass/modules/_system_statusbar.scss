@@ -22,20 +22,21 @@
       padding-left: 17px;
       border: 2px solid $system_statusbar_link_border-color;
       border-radius: 2px;
-      background-color: transparent;
-      font-size: 1.6rem;
+      background-color: $system_statusbar_link_background-color;
+      font-size: 1.5rem;
       color: $system_statusbar_link_color;
       text-align: center;
       text-decoration: none;
 
       @include susy-breakpoint($breakpoint-sm) {
         & {
-          padding-top: 8px;
+         // padding-top: 8px;
         }
       }
 
       &:hover {
-        border-color: lighten($system_statusbar_link_border-color, 10);
+        border-color: $system_statusbar_link_border-color-hover;
+        background-color: $system_statusbar_link_background-color--hover;
       }
     }
   }
@@ -48,7 +49,7 @@
 // ======================================
 // slice login box
 // ======================================
-
+/*
 #DivLoginBox {
   margin-left: -8px;
   margin-top: -50px;
@@ -151,5 +152,5 @@
     outline: none;
   }
 }
-
+*/
 

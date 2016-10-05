@@ -53,7 +53,7 @@
   }
 
   .siteLogo img {
-    max-width: $site_logo-max-width;
+    // max-width: $site_logo-max-width;
     width: 100px;
 
     @include susy-breakpoint($breakpoint-sm) {
@@ -79,6 +79,7 @@
   nav {
     background-color: $nav_background-color;
     height: 44px;
+    @include clearfix;
   }
 
   nav a {
@@ -118,8 +119,16 @@
       position: relative;
       margin-top: $nav_link_top-margin-top;
 
+      @include susy-breakpoint($breakpoint-sm) {
+         // margin-top: 7px;
+        }
+
+      @include susy-breakpoint($breakpoint-md) {
+        margin-top: 0;
+      }
+
       > a {
-        padding: 36px 10px 35px;
+        padding: 38px 10px 37px;
       }
 
 
@@ -136,7 +145,7 @@
           color: $nav_dropdown_link-color;
           font-size: $nav_dropdown_link-font-size;
           font-weight: $nav_link-font-weight;
-          padding: 3px 23px;
+          padding: 18px 23px;
         }
 
         ul {
@@ -420,7 +429,7 @@
       margin-top: 0;
     }
     .siteLogo img {
-      max-width: $site_logo-max-width * 1.2;
+     // max-width: $site_logo-max-width * 1.2;
     }
     .siteLogoName .siteName a {
       font-size: $site_logo-font-size * 1.4;
@@ -448,10 +457,10 @@
       margin: 0 auto;
 
       & > li > a {
-        padding: 20px 10px;
+        // padding: 28px 10px;
 
         @include susy-breakpoint($breakpoint-md) {
-          padding: 36px 10px 35px;
+          padding: 40px 10px 35px;
         }
       }
     }

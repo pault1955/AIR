@@ -1,0 +1,92 @@
+// ======================================
+// slice  2b blocks
+// ======================================
+
+// slice  2b blocks layout
+// ======================================
+.slice_blocks2b {
+
+  .iconBlock {
+
+    @include span(12);
+
+    .iconBlockImage {
+      @include span(3)
+    }
+    .iconBlockText {
+      @include span(9)
+    }
+
+    @include susy-breakpoint($breakpoint-ti) {
+        @include span(6);
+
+        .iconBlockImage {
+          @include span(3);
+        }
+        .iconBlockText {
+          @include span(8);
+          @include push(1);
+        }
+      }
+
+    @include susy-breakpoint($breakpoint-md) {
+
+      .iconBlockImage {
+        @include span(3);
+        @include push(2);
+      }
+      .iconBlockText {
+        @include span(7);
+      }
+    }
+  }
+
+}
+
+// slice  2 blocks style
+// ======================================
+//
+
+.slice_blocks2b {
+
+  .iconBlock {
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .iconBlockImage {
+      float: left;
+    }
+
+    .iconBlockText {
+      float: right;
+
+      .iconBlockTitle {
+        font-size: $iconBlockTitle-font-size;
+        color: $iconBlockTitle-color;
+        line-height: $iconBlockTitle-line-height;
+        margin-bottom: 5px;
+      }
+
+      .iconBlockSummary {
+        font-size: $iconBlockSummary-font-size;
+        color: $iconBlockSummary-color;
+        line-height: $iconBlockSummary-line-height;
+        margin-bottom: 5px;
+      }
+
+      .iconBlockLink {
+        font-size: $iconBlockLink-font-size;
+        color: $iconBlockLink-color;
+        line-height: $iconBlockLink-line-height;
+      }
+    }
+
+    @include susy-breakpoint($breakpoint-sm) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  }
+
+}
+
