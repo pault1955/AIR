@@ -21,22 +21,23 @@
         @include span(6);
 
         .iconBlockImage {
-          @include span(3);
+          @include span(2.5);
+          @include pre(0.5)
         }
         .iconBlockText {
           @include span(8);
-          @include push(1);
+          // @include pre(1);
         }
       }
 
     @include susy-breakpoint($breakpoint-md) {
 
       .iconBlockImage {
-        @include span(3);
-        @include push(2);
+        @include span(2);
+        @include pre(2);
       }
       .iconBlockText {
-        @include span(7);
+        @include span(8);
       }
     }
   }

@@ -60,23 +60,24 @@ $(document).ready(function () {
     preloadImages: 'all'
   });
 
-    $('.slice_events img, .slice_media img').each(function(index) {
-        var imagePath = $(this).attr('src');
-        $(this).attr('src',imagePath.replace('/Publisher/GetResizedImage.aspx?w=360&amp;h=182&amp;url=/','/'));
-    });
-
-    /* remove media list span */
-
-    $(".blocks3 > span > div").unwrap();
-
-  $('.slice_blocks3.slice_events .upcomingEventsTitle a').each(function (index) {
-    var titleLink = $(this).attr("href");
-    $(this).parent().parent().find('.upcomingEventsLink').wrapInner('<a  href="' + titleLink + '">');;
+  $('.slice_events img, .slice_media img').each(function(index) {
+    var imagePath = $(this).attr('src');
+    $(this).attr('src',imagePath.replace("/Publisher/GetResizedImage.aspx?w=360&amp;h=182&amp;url=/",""));
   });
 
-  $('.slice_blocks3.slice_media .mediaListTitle a').each(function (index) {
-    var mediaLink = $(this).attr("href");
-    $(this).parent().parent().find('.mediaListLink').wrapInner('<a  href="' + mediaLink + '">');
+  $('.slice_events .upcomingEventsTitle a').each(function (index) {
+    var titleLink = $(this).attr("href");
+    $(this).parent().parent().find('.upcomingEventsLink').wrapInner('<a  href="' + titleLink + '">');
+  });
+
+
+  /* remove media list span */
+
+  $(".blocks3 > span > div").unwrap();
+
+  $('.slice_media .mediaListTitle a').each(function (index) {
+    var titleLink = $(this).attr("href");
+    $(this).parent().parent().find('.mediaListLink').wrapInner('<a  href="' + titleLink + '">');
   });
 
 

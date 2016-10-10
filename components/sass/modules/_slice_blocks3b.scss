@@ -44,6 +44,7 @@
 
   .blockTitle {
     font-size: 3.6rem;
+    font-weight: $bold;
     line-height: 3.6rem + 0.5rem;
     color: $block3b_color;
     text-align: center;
@@ -182,5 +183,9 @@
       margin-top: 20px;
       margin-bottom: 60px;
     }
+  }
+
+  @include  susy-breakpoint($breakpoint-md) {
+    padding-top: 60px;
   }
 }

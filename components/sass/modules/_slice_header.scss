@@ -308,6 +308,10 @@
   }
   .slicknav_btn.slicknav_open {
     background-color: $slicknav_button-background-color--open;
+
+    .slicknav_menutxt {
+      margin-top: -2px;
+    }
   }
 
   .slicknav_nav {

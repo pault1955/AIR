@@ -10,23 +10,17 @@
   @include span(12);
 
   a {
-    @include  span(4)
+    @include  span(4);
   }
 
   @include susy-breakpoint($breakpoint-sm) {
-    @include  push(1.5);
-
-    a {
-      @include  span(3)
-    }
+    @include span(last 8);
+    @include squish(2);
   }
 
   @include susy-breakpoint($breakpoint-md) {
-    @include  push(3);
-
-    a {
-      @include  span(2)
-    }
+    @include span(last 6);
+    @include squish(3);
   }
 
 }
