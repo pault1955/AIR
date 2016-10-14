@@ -65,6 +65,19 @@
     }
   }
 
+  .contentLogo img {
+    // max-width: $site_logo-max-width;
+    width: 100px;
+
+    @include susy-breakpoint($breakpoint-sm) {
+      width:117px;
+    }
+
+    @include susy-breakpoint($breakpoint-md) {
+      width: 121px;
+    }
+  }
+
   .siteLogoName .siteName a {
     font-size: $site_logo-font-size;
     color: $site_logo-color;

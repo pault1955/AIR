@@ -35,11 +35,11 @@
 
 .slice_blocks2 {
 
-  .block2-1, .block2-2 {
+  .block2-1 .ArticleBody, .block2-2 .ArticleBody {
     padding: 30px 30px 30px 60px;
     color: $block2-color;
     font-size: 1.6rem;
-    line-height: 1.8rem;
+    line-height: 2rem;
     background-position: 25px 27px;
     background-repeat: no-repeat;
 
@@ -47,9 +47,14 @@
       color: $block2-title-color;
       font-weight: 700;
     }
+
+    @include susy-breakpoint($breakpoint-md) {
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+    }
   }
 
-  .block2-1 {
+  .block2-1 .ArticleBody {
     background-image: url(../images/icon-clock.png);
     padding-bottom: 0;
 
@@ -58,7 +63,7 @@
     }
   }
 
-  .block2-2 {
+  .block2-2 .ArticleBody {
     background-image: url(../images/icon-marker.png);
   }
 

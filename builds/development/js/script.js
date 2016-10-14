@@ -60,26 +60,16 @@ $(document).ready(function () {
     preloadImages: 'all'
   });
 
-  $('.slice_events img, .slice_media img').each(function(index) {
-    var imagePath = $(this).attr('src');
-    $(this).attr('src',imagePath.replace("/Publisher/GetResizedImage.aspx?w=360&amp;h=182&amp;url=/",""));
+
+  $( '.slice_slideshow_full_width  .bannerSlides ul li.gallery_li a img' ).each(function( ) {
+    var slideLink = $(this).parent().attr('href');
+    var alt = $(this).attr('alt');
+    var data = $.parseHTML( alt );
+    var title = '<div class="slideTitle">' + ($(data).text().split('*')[ 0 ] || '') + '</div>';
+    var subtitle = '<div class="slideText">' + ($(data).text().split('*')[ 1 ] || '') + '</div>';
+    var caption = '<div class="caption">' + title + '<div class="divider"></div>' + subtitle + '<a href="' + slideLink + '" class="slideButton">MORE DETAILS</a></div>';
+    $(caption).insertAfter( this );
   });
-
-  $('.slice_events .upcomingEventsTitle a').each(function (index) {
-    var titleLink = $(this).attr("href");
-    $(this).parent().parent().find('.upcomingEventsLink').wrapInner('<a  href="' + titleLink + '">');
-  });
-
-
-  /* remove media list span */
-
-  $(".blocks3 > span > div").unwrap();
-
-  $('.slice_media .mediaListTitle a').each(function (index) {
-    var titleLink = $(this).attr("href");
-    $(this).parent().parent().find('.mediaListLink').wrapInner('<a  href="' + titleLink + '">');
-  });
-
 
 
 });

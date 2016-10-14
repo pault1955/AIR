@@ -1,0 +1,302 @@
+// ======================================
+// slice  content page
+// ======================================
+
+// slice   content page layout
+// ======================================
+
+.slice_content_page {
+
+  @include susy-breakpoint($breakpoint-sm) {
+    .main-content {
+      @include span(9);
+    }
+
+    .sidebar {
+      @include span(3);
+    }
+  }
+}
+
+// slice   content page style
+// ======================================
+
+.slice_content_page {
+
+  background-color: $content_page_background-color;
+  border-top: 2px solid $content_page_background-color-2;
+
+  .main-content {
+    background-color: $content_page_content_background-color;
+    padding: 25px 32px;
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    @include susy-breakpoint($breakpoint-sm) {
+      margin-top: 20px;
+    }
+
+    @include susy-breakpoint($breakpoint-md) {
+      padding-top: 25px;
+    }
+
+    ul {
+      li {
+        line-height: 26px;
+        list-style: none;
+
+        &:before {
+          /* For a round bullet */
+          content: '\2022';
+          /* For a square bullet */
+          /*content:'\25A0';*/
+          display: block;
+          position: relative;
+          max-width: 0;
+          max-height: 0;
+          left: -15px;
+          top: -1px;
+          color: $default_link_color;
+        }
+      }
+    }
+
+    ol {
+      line-height: 26px;
+    }
+
+    /* component styling */
+
+    /* article list */
+
+    .articleListTitle {
+      font-weight: $bold;
+    }
+
+    /* upcoming events list */
+
+    .eventsListTitle {
+      font-weight: $bold;
+    }
+
+    .eventsListDate {
+      font-style: italic;
+    }
+
+    /* media list */
+
+    .mediaListTitle {
+      font-weight: $bold;
+    }
+  }
+
+  .sidebar {
+
+    .group-nav {
+      display: none;
+
+      @include susy-breakpoint($breakpoint-sm) {
+        display: block;
+        margin-top: 52px;
+        margin-bottom: 30px;
+
+        background: $sidebar_group_nav_background-color;
+
+        table {
+          border-collapse: separate;
+          border-spacing: 0;
+          td {
+            padding: 0 !important;
+          }
+        }
+        table.boxout_header {
+
+
+          .boxout_header_left, .boxout_header_right {
+            display: none
+          }
+
+          .boxout_header_middle {
+            margin-top: 0;
+            padding: 0
+          }
+
+          .boxout_header_middle a {
+            display: block;
+            padding: 16px 15px;
+            color: $sidebar_group_nav_header_color;
+            font-size: $sidebar_group_nav_header_font-size;
+            text-decoration: none;
+            margin-bottom: 1px;
+            float: left;
+            width: 100%;
+            background-color: $sidebar_group_nav_header_background-color;
+            text-transform: uppercase;
+
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+
+        }
+
+        .group_nav_child, .group_nav_sibling, .group_nav_parent, .group_nav_selected {
+          float: left;
+          width: 100%;
+
+          a {
+            display: block;
+            padding: 15px;
+            -webkit-transition: all 500ms ease;
+            -o-transition: all 500ms ease;
+            transition: all 500ms ease;
+            color:$sidebar_group_nav_color;
+            font-size: $sidebar_group_nav_font-size;
+            text-decoration: none;
+            margin-bottom: 1px;
+            float: left;
+            width: 100%;
+            background-color: $sidebar_group_nav_background-color;
+            border-bottom: 1px solid #fff;
+
+            &:hover {
+              background-color: $sidebar_group_nav_selected_background_color;
+              color: $sidebar_group_nav_selected_color;
+            }
+
+          }
+        }
+
+        .group_nav_selected {
+
+          a {
+            background-color: $sidebar_group_nav_selected_background_color;
+            color: $sidebar_group_nav_selected_color;
+          }
+          .group_nav_child {
+
+            a {
+              // background-color: #f0f1f2;
+              // color: #4d4d4d;
+              padding-left: 25px;
+
+              &:hover {
+                // background-color: #31a7de;
+                //  color: #2aabab
+              }
+            }
+
+          }
+
+          .group_nav_parent > div > a {
+            padding-left: 25px;
+          }
+
+        }
+
+      }
+    }
+
+    .buttons-2 {
+      padding-top: 5px;
+      padding-bottom: 0;
+      margin-top: 0;
+      margin-bottom: 30px;
+
+      a {
+        font-size: $sidebar_buttons_font-size;
+        font-weight: $sidebar_buttons_font-weight;
+        color: $sidebar_buttons_color;
+        letter-spacing: 0.3px;
+        padding: 25px 20px 25px 100px;
+        display: block;
+        border: none;
+        margin-top: 4px;
+        position: relative;
+
+
+        &.button-1 {
+          background: $sidebar_buttons_button1_background-color url(../images/icon-news.png)  30px 13px no-repeat;
+          background-size: 45px;
+          &:hover {
+            background-color: $sidebar_buttons_button1_background-color--hover;
+            opacity: 0.8;
+          }
+        }
+        &.button-2 {
+          background: $sidebar_buttons_button2_background-color  url(../images/icon-bible.png)  30px 10px no-repeat;
+          background-size: 38px;
+          &:hover {
+            background-color: $sidebar_buttons_button2_background-color--hover;
+            opacity: 0.8;
+          }
+        }
+
+
+        @include susy-breakpoint($breakpoint-sm) {
+          & {
+            font-size: $sidebar_buttons_font-size - 0.1;
+            padding: 18px 20px 18px 15px;
+          }
+
+          &.button-1 {
+            background-image: none;
+          }
+
+          &.button-2{
+            background-image: none;
+
+          }
+
+        }
+        @include susy-breakpoint($breakpoint-md) {
+          & {
+            font-size: $sidebar_buttons_font-size - 0.2;
+            line-height: $sidebar_buttons_font-size;
+            padding: 20px 20px 20px 60px;
+          }
+
+          &.button-1 {
+            background: $sidebar_buttons_button1_background-color url(../images/icon-news.png)  10px 16px no-repeat;
+            background-size: 38px;
+          }
+
+          &.button-2{
+            background: $sidebar_buttons_button2_background-color  url(../images/icon-bible.png)  10px 14px no-repeat;
+            background-size: 30px;
+          }
+
+
+        }
+
+      }
+
+      @include susy-breakpoint ($breakpoint-sm) {
+        /* required when not nested in another section
+        background: $sidebar_buttons_slice-background-image;
+        padding-top: 50px;
+        padding-bottom: 60px;
+        */
+        margin-top: 50px;
+        margin-bottom: 40px;
+
+      }
+
+      @include susy-breakpoint ($breakpoint-sm) {
+        margin-top: 0;
+        margin-bottom: 30px;
+
+      }
+    }
+
+  }
+
+  @include  susy-breakpoint($breakpoint-sm) {
+    background-color: $content_page_background-color;
+    margin-top: -45px;
+  }
+
+  @include  susy-breakpoint($breakpoint-md) {
+    margin-top: -49px;
+  }
+}

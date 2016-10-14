@@ -83,6 +83,7 @@ a {
   -ms-transition: all 500ms ease;
   -o-transition: all 500ms ease;
   text-decoration: none;
+  cursor: pointer;
 
   &:hover {
     color: $default_link-color--hover;
@@ -134,6 +135,12 @@ img.preview_show {
   width: 20px;
 }
 
+.ArticleBody, .ArticleEditor {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+
+
 /* popup windows */
 
 .popupwindow_title {
@@ -184,17 +191,62 @@ input[type="checkbox"] + label, input[type="radio"] +  label {
   display: none;
 }
 
+/* form styling */
+
+input {
+  // -webkit-appearance: none;
+}
+
+input[type="checkbox"] + label, input[type="radio"] + label {
+  margin-left: 10px;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: $normal;
+}
+
+input:not([type=checkbox]):not([type=radio]):not([type=button]) {
+  // -webkit-appearance: none;
+  box-shadow: none !important;
+}
+
+input[type="checkbox"] + label, input[type="radio"] + label {
+  margin-left: 10px;
+}
+
+.ArticleBody input:not([type=checkbox]):not([type=radio]):not([type=button]), .ArticleBody textarea,
+.ArticleEditor input:not([type=checkbox]):not([type=radio]):not([type=button]), .ArticleEditor textarea {
+  margin-bottom: 8px;
+  padding: 4px 3px;
+  border: 1px solid $default_form_border-color;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.ArticleBody textarea, .ArticleEditor textarea {
+  width: 100%;
+}
+
+.ArticleBody input:focus, .ArticleBody textarea:focus,
+.ArticleEditor input:focus, .ArticleEditor textarea:focus {
+  outline: none;
+  box-shadow: 0 0 4px rgba(49, 167, 222, 0.8)
+}
+
+// hide author info on articles
+.content_page_main .ArticleBody .author {
+  display: none;
+}
+
+
+
 
 @media (min-width: $breakpoint-sm) {
-
-  html {
-    font-size: $default_font-size-desktop;
-  }
-
-  body {
-    font-size: $default_font-size-desktop;
-    line-height: $default_line-height-desktop;
-  }
 
 
   h1 {
@@ -238,4 +290,8 @@ input[type="checkbox"] + label, input[type="radio"] +  label {
     font-size: 16px;
   }
 
+  .ArticleBody, .ArticleEditor {
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+  }
 }
